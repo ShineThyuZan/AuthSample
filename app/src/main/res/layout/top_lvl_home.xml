@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorSurface">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorSurfaceVariant">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivContact"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                app:srcCompat="@drawable/ic_contact"
+                app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Home"
+                android:textAlignment="center"
+                android:textColor="@color/colorOnBackground"
+                android:textAppearance="@style/TextAppearance.ChatApp.TitleMedium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivContact"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivNoti"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_noti"
+                app:layout_constraintBottom_toBottomOf="@+id/ivSearchView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ivSearchView" />
+
+            <ImageView
+                android:id="@+id/ivSearchView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                app:layout_constraintEnd_toStartOf="@+id/ivNoti"
+                app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="0dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/nestedSV"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarHome" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nestedSV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/profileItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+<!--            <com.google.android.material.imageview.ShapeableImageView-->
+<!--                android:id="@+id/ivUser"-->
+<!--                android:layout_width="54dp"-->
+<!--                android:layout_height="54dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@mipmap/placeholder"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"-->
+<!--                app:strokeColor="@color/chat_grey_900"-->
+<!--                app:strokeWidth="@dimen/_1sdp"/>-->
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivUser"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/placeholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="@dimen/_1sdp"
+                android:padding="@dimen/_1sdp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_order_right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.489"
+                app:srcCompat="@drawable/ic_right" />
+
+            <TextView
+                android:id="@+id/tvbio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/bio"
+                android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+                android:textColor="@color/colorPrimaryContainer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/img_order_right"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/ivUser"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Shine Gyi"
+                android:textAppearance="@style/TextAppearance.ChatApp.TitleMedium"
+                app:layout_constraintBottom_toTopOf="@+id/tvbio"
+                app:layout_constraintEnd_toStartOf="@+id/img_order_right"
+                app:layout_constraintStart_toEndOf="@+id/ivUser"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constService"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileItem"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <TextView
+                android:id="@+id/tvService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/services_3"
+                android:textAppearance="@style/TextAppearance.ChatApp.TitleSmall"
+                android:textColor="@color/colorOnBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/iv_qr_scanner"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_item_status"
+                app:layout_constraintEnd_toStartOf="@+id/iv_shake_phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvService" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/iv_shake_phone"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/background_item_status"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_qr_scanner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_qr_scanner"
+                app:layout_constraintTop_toTopOf="@+id/iv_qr_scanner" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/iv_shake_phone"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="96dp"-->
+            <!--                android:layout_marginStart="8dp"-->
+            <!--                android:layout_marginEnd="16dp"-->
+            <!--                android:background="@drawable/background_item_status"-->
+            <!--                app:layout_constraintBottom_toBottomOf="@+id/iv_qr_scanner"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toEndOf="@+id/iv_qr_scanner"-->
+            <!--                app:layout_constraintTop_toTopOf="@+id/iv_qr_scanner"-->
+            <!--                app:srcCompat="@drawable/background_item_status" />-->
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_qr_scanner"
+                app:layout_constraintTop_toTopOf="@+id/iv_qr_scanner"
+                app:srcCompat="@drawable/ic_scan" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/scan_with_qr_code"
+                android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+                app:layout_constraintStart_toStartOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                app:layout_constraintStart_toStartOf="@+id/iv_shake_phone"
+                app:layout_constraintTop_toTopOf="@+id/iv_shake_phone"
+                app:srcCompat="@drawable/ic_shake" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shake_phone"
+                android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintStart_toStartOf="@+id/imageView10" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/iv_people_nearby"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/background_item_status"
+                app:layout_constraintEnd_toEndOf="@+id/iv_qr_scanner"
+                app:layout_constraintStart_toStartOf="@+id/iv_qr_scanner"
+                app:layout_constraintTop_toBottomOf="@+id/iv_qr_scanner" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_people_nearby"
+                app:layout_constraintTop_toTopOf="@+id/iv_people_nearby"
+                app:srcCompat="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/people_nearby"
+                android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+                app:layout_constraintStart_toStartOf="@+id/imageView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_people_nearby"
+                app:layout_constraintStart_toStartOf="@+id/iv_shake_phone"
+                app:srcCompat="@drawable/background_item_status" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/iv_my_notes"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:background="@drawable/background_item_status"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_people_nearby"
+                app:layout_constraintEnd_toEndOf="@+id/iv_shake_phone"
+                app:layout_constraintStart_toStartOf="@+id/iv_shake_phone" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_my_notes"
+                app:layout_constraintTop_toTopOf="@+id/iv_my_notes"
+                app:srcCompat="@drawable/ic_note" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_notes"
+                android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+                app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                app:layout_constraintStart_toStartOf="@+id/imageView14" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvInternetStatus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_52sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="16dp"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/card_corner_medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/chat_grey_700"
+                    android:drawableLeft="@drawable/ic_wifi_off"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:text="@string/no_internet_description"
+                    android:textColor="@color/colorOnPrimary" />
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

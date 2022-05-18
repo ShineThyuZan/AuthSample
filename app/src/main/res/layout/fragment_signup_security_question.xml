@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorSurface"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/connector_line1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:srcCompat="@drawable/ic_step1" />
+
+        <View
+            android:id="@+id/connector_line1"
+            android:layout_width="32dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/primaryIndicatorDividerColor"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_step2"
+            app:layout_constraintEnd_toStartOf="@+id/iv_step2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_step1"
+            app:layout_constraintTop_toTopOf="@+id/iv_step2" />
+
+        <ImageView
+            android:id="@+id/iv_step2"
+            style="@style/DefaultStepperColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/connector_line2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/connector_line1"
+            app:layout_constraintTop_toTopOf="@+id/iv_step1"
+            app:srcCompat="@drawable/ic_step2" />
+
+        <View
+            android:id="@+id/connector_line2"
+            android:layout_width="32dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/primaryIndicatorDividerColor"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_step3"
+            app:layout_constraintEnd_toStartOf="@+id/iv_step3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_step2"
+            app:layout_constraintTop_toTopOf="@+id/iv_step3" />
+
+        <ImageView
+            android:id="@+id/iv_step3"
+            style="@style/DefaultStepperColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_step2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/connector_line2"
+            app:layout_constraintTop_toTopOf="@+id/iv_step2"
+            app:srcCompat="@drawable/ic_empty_step3"
+            app:tint="@color/colorOnSurfaceInverse" />
+
+        <TextView
+            android:id="@+id/tv_security_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/security_questions"
+            android:textAppearance="@style/TextAppearance.ChatApp.TitleMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_step2" />
+
+        <TextView
+            android:id="@+id/tv_security_notice"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/security_notice"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_security_question" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_question1"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/colorSurface"
+            android:paddingStart="@dimen/_16sdp"
+            android:text="@string/select_question"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+            android:textColor="?android:attr/textColorPrimary"
+            app:cornerRadius="@dimen/_24sdp"
+            app:icon="@drawable/ic_arrow_down_24"
+            app:iconGravity="end"
+            app:iconPadding="10dp"
+            app:iconTint="@color/colorPrimaryContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_security_notice"
+            app:strokeColor="@color/colorOnSecondary" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_answer1"
+            style="@style/Widget.ChatApp.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxStrokeWidth="1.5dp"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/btn_question1"
+            app:layout_constraintStart_toStartOf="@+id/btn_question1"
+            app:layout_constraintTop_toBottomOf="@+id/btn_question1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_answer1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/enter_answer"
+                android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+                android:textColorHint="@color/colorOnSecondary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_question2"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/colorSurface"
+            android:paddingStart="@dimen/_16sdp"
+            android:text="@string/select_question"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+            android:textColor="?android:attr/textColorPrimary"
+            app:cornerRadius="@dimen/_24sdp"
+            app:icon="@drawable/ic_arrow_down_24"
+            app:iconGravity="end"
+            app:iconPadding="10dp"
+            app:iconTint="@color/colorPrimaryContainer"
+            app:layout_constraintEnd_toEndOf="@+id/til_answer1"
+            app:layout_constraintStart_toStartOf="@+id/til_answer1"
+            app:layout_constraintTop_toBottomOf="@+id/til_answer1"
+            app:strokeColor="@color/colorOnSecondary" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_answer2"
+            style="@style/Widget.ChatApp.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxStrokeWidth="1.5dp"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/btn_question2"
+            app:layout_constraintStart_toStartOf="@+id/btn_question2"
+            app:layout_constraintTop_toBottomOf="@+id/btn_question2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_answer2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/enter_answer"
+                android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+                android:textColorHint="@color/colorOnSecondary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_question3"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/colorSurface"
+            android:paddingStart="@dimen/_16sdp"
+            android:text="@string/select_question"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+            android:textColor="?android:attr/textColorPrimary"
+            app:cornerRadius="@dimen/_24sdp"
+            app:icon="@drawable/ic_arrow_down_24"
+            app:iconGravity="end"
+            app:iconPadding="10dp"
+            app:iconTint="@color/colorPrimaryContainer"
+            app:layout_constraintEnd_toEndOf="@+id/til_answer2"
+            app:layout_constraintStart_toStartOf="@+id/til_answer2"
+            app:layout_constraintTop_toBottomOf="@+id/til_answer2"
+            app:strokeColor="@color/colorOnSecondary" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_answer3"
+            style="@style/Widget.ChatApp.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxStrokeWidth="1.5dp"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/btn_question3"
+            app:layout_constraintStart_toStartOf="@+id/btn_question3"
+            app:layout_constraintTop_toBottomOf="@+id/btn_question3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_answer3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/enter_answer"
+                android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+                android:textColorHint="@color/colorOnSecondary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb_terms_and_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="4dp"
+            android:button="@drawable/bg_checked_square_checkbox"
+            android:text="@string/read_and_accept"
+            android:textAppearance="@style/TextAppearance.ChatApp.LabelSmall"
+            app:layout_constraintStart_toStartOf="@+id/til_answer3"
+            app:layout_constraintTop_toBottomOf="@+id/til_answer3" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_terms_and_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/terms_of_service"
+            android:textAppearance="@style/TextAppearance.ChatApp.LabelSmall"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/cb_terms_and_service"
+            app:layout_constraintEnd_toEndOf="@+id/til_answer3"
+            app:layout_constraintStart_toEndOf="@+id/cb_terms_and_service"
+            app:layout_constraintTop_toTopOf="@+id/cb_terms_and_service" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start"
+            style="@style/Widget.ChatApp.Filled.Button"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_terms_and_service"
+            app:layout_constraintStart_toStartOf="@+id/cb_terms_and_service"
+            app:layout_constraintTop_toBottomOf="@+id/cb_terms_and_service" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="question1_array">
+        <item>Select Question</item>
+        <item>What is your ex name?</item>
+        <item>What is your favourite color?</item>
+        <item>What is your Boss name?</item>
+        <item>What is your birthday?</item>
+        <item>What is your favourite desert?</item>
+        <item>Do you have a boyfriend or girlfriend?</item>
+        <item>What is your native town?</item>
+        <item>What is your crush name?</item>
+    </string-array>
+</resources>

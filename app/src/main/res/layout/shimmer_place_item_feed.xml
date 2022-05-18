@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivProfileFeed"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@color/colorOnSurfaceInverse"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+
+        app:strokeColor="@color/chat_green_200"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/tvFeedName"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@drawable/background_item_status"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+        android:textColor="@color/colorOnBackground"
+        app:layout_constraintStart_toEndOf="@+id/ivProfileFeed"
+        app:layout_constraintTop_toTopOf="@+id/ivProfileFeed" />
+
+    <TextView
+        android:id="@+id/tvFeedLocation"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_item_status"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelSmall"
+        android:textColor="@color/colorPrimaryContainer"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfileFeed"
+        app:layout_constraintStart_toStartOf="@+id/tvFeedName"
+        app:layout_constraintTop_toBottomOf="@+id/tvFeedName" />
+
+    <ImageView
+        android:id="@+id/tvFeedMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfileFeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivProfileFeed"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    <ImageView
+        android:id="@+id/ivFeedPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_320sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:foreground="@color/colorOnSurfaceInverse"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfileFeed"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/ivFeedLove"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/colorOnSurfaceInverse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFeedPhoto" />
+
+    <TextView
+        android:id="@+id/tvFeedLoveCount"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:background="@drawable/background_item_status"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelSmall"
+       android:textColor="@color/textColorSecondary"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFeedLove"
+        app:layout_constraintStart_toEndOf="@+id/ivFeedLove"
+        app:layout_constraintTop_toTopOf="@+id/ivFeedLove" />
+
+    <ImageView
+        android:id="@+id/ivFeedComment"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:foreground="@color/colorOnSurfaceInverse"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFeedLoveCount"
+        app:layout_constraintStart_toEndOf="@+id/tvFeedLoveCount"
+        app:layout_constraintTop_toTopOf="@+id/tvFeedLoveCount"
+        app:srcCompat="@drawable/ic_comment" />
+
+    <TextView
+        android:id="@+id/tvFeedCommentCount"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:background="@drawable/background_item_status"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelSmall"
+       android:textColor="@color/textColorSecondary"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFeedComment"
+        app:layout_constraintStart_toEndOf="@+id/ivFeedComment"
+        app:layout_constraintTop_toTopOf="@+id/ivFeedComment" />
+
+    <TextView
+        android:id="@+id/tvFeedDescription"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/background_item_status"
+        android:maxLines="3"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="@color/colorOnBackground"
+        app:layout_constraintEnd_toEndOf="@+id/tvFeedMore"
+        app:layout_constraintStart_toStartOf="@+id/ivFeedLove"
+        app:layout_constraintTop_toBottomOf="@+id/ivFeedComment" />
+
+    <TextView
+        android:id="@+id/tvTimeAgo"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+
+        android:background="@drawable/background_item_status"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelSmall"
+        android:textColor="@color/colorOnSecondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvFeedDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvFeedDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

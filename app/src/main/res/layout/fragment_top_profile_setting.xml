@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSurface">
+
+    <include
+        android:id="@+id/toolbarHome"
+        layout="@layout/toolbar_no_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/sv_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sv_setting"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarHome">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bottomSheetOutlineColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_acc_security"
+            style="@style/ProfileItem"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorSurface"
+            android:drawableLeft="@drawable/ic_setting_account"
+            android:drawablePadding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/accout_security"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/bottomSheetOutlineColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_acc_security" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_notification"
+            style="@style/ProfileItem"
+            android:background="@color/colorSurface"
+            android:drawableLeft="@drawable/ic_setting_notifications"
+            android:drawablePadding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/msg_noti"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/bottomSheetOutlineColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_notification" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_Appearance"
+                style="@style/ProfileItem"
+                android:background="@color/colorSurface"
+                android:drawableLeft="@drawable/ic_setting_appearance"
+                android:drawablePadding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/setting_appearance"
+                android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/bottomSheetOutlineColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_Appearance" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPrivacyAndSecurity"
+                style="@style/ProfileItem"
+                android:background="@color/colorSurface"
+                android:drawableLeft="@drawable/ic_setting_privacy_security"
+                android:drawablePadding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/setting_privacy_security"
+                android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/bottomSheetOutlineColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPrivacyAndSecurity" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_help_and_support"
+            style="@style/ProfileItem"
+            android:background="@color/colorSurface"
+            android:drawableLeft="@drawable/ic_setting_help_support"
+            android:drawablePadding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/help_and_feedback"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider5" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/bottomSheetOutlineColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_help_and_support" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_about"
+            style="@style/ProfileItem"
+            android:background="@color/colorSurface"
+            android:drawableLeft="@drawable/ic_setting_about"
+            android:drawablePadding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/profile_about"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/bottomSheetOutlineColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_about" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLogout"
+            style="@style/ProfileItem"
+            android:background="@color/colorSurface"
+            android:drawableLeft="@drawable/ic_setting_logout"
+            android:text="@string/profile_logout"
+            android:enabled="false"
+            android:drawablePadding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+            android:textColor="@color/design_default_color_error"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

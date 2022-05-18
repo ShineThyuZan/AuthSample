@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOnPrimary"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarEditProfile"
+        layout="@layout/toolbar_edit_my_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:background="@color/colorSurface"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarEditProfile">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/frameLayout"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="@dimen/_120sdp"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent">-->
+
+            <!--                <androidx.appcompat.widget.AppCompatImageView-->
+            <!--                    android:id="@+id/img_wallpaper"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:scaleType="centerCrop"-->
+            <!--                    app:srcCompat="@drawable/bg" />-->
+
+            <!--                <View-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:background="@color/blur_wallpaper" />-->
+
+            <!--                <com.google.android.material.button.MaterialButton-->
+            <!--                    android:id="@+id/btn_edit_cover"-->
+            <!--                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:text="@string/edit_cover" />-->
+
+            <!--            </FrameLayout>-->
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/iv_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blur_wallpaper" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUploadCover"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_color_transparent"
+                    android:gravity="center"
+                    android:text="@string/upload_cover"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.ChatApp.LabelMedium"
+                    android:textColor="@color/pureWhite" />
+            </FrameLayout>
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_my_profile"
+                android:layout_width="@dimen/_64sdp"
+                android:layout_height="@dimen/_64sdp"
+                android:layout_marginTop="-24dp"
+                android:padding="@dimen/_2sdp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/placeholder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:strokeColor="@color/white"
+                app:strokeWidth="@dimen/_2sdp" />
+
+
+            <TextView
+                android:id="@+id/tvQuestionOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:text="@string/full_name"
+                android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+                android:textColor="@color/colorOnBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_my_profile" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFullName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxStrokeColor="@color/textinputlayout_boxstroke_normal_state"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/tvQuestionOne"
+                app:layout_constraintStart_toStartOf="@+id/tvQuestionOne"
+                app:layout_constraintTop_toBottomOf="@+id/tvQuestionOne">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/hint_name"
+                    android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tvEditBio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/bio"
+                android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+                android:textColor="@color/colorOnBackground"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/tilFullName"
+                app:layout_constraintTop_toBottomOf="@+id/tilFullName" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBio"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:hintEnabled="false"
+                app:boxStrokeColor="@color/textinputlayout_boxstroke_normal_state"
+                app:layout_constraintEnd_toEndOf="@+id/tvQuestionOne"
+                app:layout_constraintStart_toStartOf="@+id/tvQuestionOne"
+                app:layout_constraintTop_toBottomOf="@+id/tvEditBio">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/enter_your_bio"
+                    android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tvEditEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/email"
+                android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+                android:textColor="@color/colorOnBackground"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/tilBio"
+                app:layout_constraintTop_toBottomOf="@+id/tilBio" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEditEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:hintEnabled="false"
+                app:boxStrokeColor="@color/textinputlayout_boxstroke_normal_state"
+                app:layout_constraintEnd_toEndOf="@+id/tvQuestionOne"
+                app:layout_constraintStart_toStartOf="@+id/tvQuestionOne"
+                app:layout_constraintTop_toBottomOf="@+id/tvEditEmail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEditEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/email_address"
+                    android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tvBirthday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/birth_date"
+                android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+                android:textColor="@color/colorOnBackground"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/tilEditEmail"
+                app:layout_constraintTop_toBottomOf="@+id/tilEditEmail" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBirthDay"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:hintEnabled="false"
+                app:boxStrokeColor="@color/textinputlayout_boxstroke_normal_state"
+                app:layout_constraintEnd_toEndOf="@+id/tvQuestionOne"
+                app:layout_constraintStart_toStartOf="@+id/tvQuestionOne"
+                app:layout_constraintTop_toBottomOf="@+id/tvBirthday">
+
+                <TextView
+                    android:id="@+id/et_birth_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:gravity="center_vertical"
+                    android:hint="@string/birth_date"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tilBirthDay"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="@dimen/_32sdp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@drawable/bg_transparent_with_black_border"-->
+            <!--                android:drawableEnd="@drawable/ic_calendar"-->
+            <!--                android:drawablePadding="@dimen/_8sdp"-->
+            <!--                android:focusable="false"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:paddingStart="@dimen/_16sdp"-->
+            <!--                android:paddingEnd="@dimen/_16sdp"-->
+            <!--                android:text="@string/select_birthdate"-->
+            <!--                android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"-->
+            <!--                app:layout_constraintEnd_toEndOf="@+id/tilEditEmail"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/tvQuestionOne"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/tvBirthday" />-->
+
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Gender"
+                android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+                android:textColor="@color/colorOnBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tilBirthDay" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tilBirthDay"
+                app:layout_constraintStart_toStartOf="@+id/tvBirthday"
+                app:layout_constraintTop_toBottomOf="@+id/tv_gender">
+
+                <RadioGroup
+                    android:id="@+id/rg_register_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_register_male"
+                        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/bg_checked_circle_checkbox"
+                        android:buttonTint="@color/switch_track_color_state"
+                        android:text="@string/male"
+                        android:paddingLeft="@dimen/margin_small"
+                        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_register_female"
+                        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/bg_checked_circle_checkbox"
+                        android:buttonTint="@color/switch_track_color_state"
+                        android:text="@string/female"
+                        android:paddingLeft="@dimen/margin_small"
+                        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rb_register_other"
+                        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/bg_checked_circle_checkbox"
+                        android:buttonTint="@color/switch_track_color_state"
+                        android:paddingLeft="@dimen/margin_small"
+                        android:text="@string/other"
+                        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

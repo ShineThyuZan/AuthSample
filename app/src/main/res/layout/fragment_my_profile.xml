@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSurface"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSurface">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            app:titleEnabled="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp">
+
+                <ImageView
+                    android:id="@+id/ivBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/placeholder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivMyProfile"
+                    android:layout_width="@dimen/_64sdp"
+                    android:layout_height="@dimen/_64sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="-24dp"
+                    android:padding="@dimen/_2sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivBackground"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="@dimen/_2sdp" />
+
+                <TextView
+                    android:id="@+id/btnMyProfileEdit"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:background="@drawable/bg_border_black"
+                    android:gravity="center"
+                    android:text="@string/edit_profile"
+                    android:textColor="@color/colorOnBackground"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivMyProfile"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvMyProfileName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.ChatApp.TitleMedium"
+                    android:textColor="@color/colorOnBackground"
+                    app:layout_constraintEnd_toEndOf="@+id/btnMyProfileEdit"
+                    app:layout_constraintStart_toStartOf="@+id/ivMyProfile"
+                    app:layout_constraintTop_toBottomOf="@+id/ivMyProfile" />
+
+                <TextView
+                    android:id="@+id/tvBio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+                    android:textColor="@color/colorPrimaryContainer"
+                    app:layout_constraintEnd_toEndOf="@+id/tvMyProfileName"
+                    app:layout_constraintStart_toStartOf="@+id/tvMyProfileName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMyProfileName" />
+
+                <TextView
+                    android:id="@+id/tvMyProfileFeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="0 feedss"
+                    android:textAppearance="@style/TextAppearance.ChatApp.BodySmall"
+                    android:textColor="@color/colorOnBackground"
+                    app:layout_constraintStart_toStartOf="@+id/tvBio"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBio" />
+
+                <TextView
+                    android:id="@+id/tvMyProfileFriends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:text="0 friend >"
+                    android:textAppearance="@style/TextAppearance.ChatApp.BodySmall"
+                    android:textColor="@color/colorOnBackground"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvMyProfileFeed"
+                    app:layout_constraintStart_toEndOf="@+id/tvMyProfileFeed"
+                    app:layout_constraintTop_toTopOf="@+id/tvMyProfileFeed" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:id="@+id/rvMyProfileActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_72sdp"
+                    android:nestedScrollingEnabled="true"
+                    android:overScrollMode="never"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvMyProfileFeed"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMyProfileFriends" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/AppTheme.PopupOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:layout_collapseMode="pin">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivProfileBack"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:src="@drawable/ic_back_arrowhead"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_26sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:text="My profile"
+                        android:textColor="@color/colorOnBackground"
+                        android:textSize="@dimen/_16sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/ivProfileQr"
+                        app:layout_constraintStart_toEndOf="@+id/ivProfileBack"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:clickable="true"
+                        android:id="@+id/ivProfileMore"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="20dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivProfileQr"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivProfileQr"
+                        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+                    <ImageView
+                        android:id="@+id/ivProfileQr"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:src="@drawable/ic_qr"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                        app:layout_constraintEnd_toStartOf="@+id/ivProfileMore"
+                        app:layout_constraintTop_toTopOf="@+id/textView13" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/myProfile_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorSurface"
+            app:tabTextColor="@color/bottom_navigation_color_state"
+            app:tabMode="scrollable" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/myProfilePager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

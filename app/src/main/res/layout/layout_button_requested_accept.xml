@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_requested_accept" >
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_fri_request_cancel"
+        style="@style/Widget.ChatApp.Normal.Button"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorOnPrimary"
+        android:drawableLeft="@drawable/ic_request_cancel"
+        android:drawablePadding="4dp"
+        android:text="@string/btn_request_cancel"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+        android:textColor="@color/colorOnSurface"
+        app:strokeColor="@color/colorOnBackground"
+        app:layout_constraintEnd_toStartOf="@+id/btn_fri_request_accept"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="@color/colorOnBackground" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_fri_request_accept"
+        style="@style/Widget.ChatApp.Normal.Button"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:drawableLeft="@drawable/ic_request_accept"
+        android:drawablePadding="4dp"
+        android:textColor="@color/colorOnSurface"
+        android:text="@string/btn_request_accept"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_fri_request_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_fri_request_cancel"
+        app:layout_constraintTop_toTopOf="@+id/btn_fri_request_cancel"
+        tools:textColor="@color/colorOnBackground"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

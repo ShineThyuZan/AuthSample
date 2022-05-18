@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?attr/bottomSheetStyle"
+    android:id="@+id/bs_more_action"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    android:paddingBottom="@dimen/_16sdp"
+    android:paddingTop="@dimen/_16sdp"
+    android:orientation="vertical"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <TextView
+        android:id="@+id/tv_more_action"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:text="@string/more_action"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.ChatApp.TitleMedium"
+        android:textColor="@color/colorOnBackground" />
+
+
+    <View
+        android:id="@+id/divider_title"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/buttonBackgroundColor" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_copy_profile_link"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:drawableStart="@drawable/ic_copy_profile_link"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground"
+        android:paddingStart="@dimen/_8sdp"
+        android:text="@string/copy_profile_link"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="@color/colorOnBackground" />
+
+    <View
+        android:id="@+id/divider_one"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/buttonBackgroundColor" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_report_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:drawableStart="@drawable/ic_report_profile"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground"
+        android:paddingStart="@dimen/_8sdp"
+        android:text="@string/report_profile"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="@color/colorOnBackground" />
+
+    <View
+        android:id="@+id/divider_two"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/buttonBackgroundColor" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_block_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:drawableStart="@drawable/ic_block_user"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground"
+        android:paddingStart="@dimen/_8sdp"
+        android:text="@string/block_user"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="@color/design_default_color_error" />
+
+    <View
+        android:id="@+id/divider_three"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/buttonBackgroundColor" />
+
+
+</LinearLayout>

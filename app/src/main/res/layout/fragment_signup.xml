@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorSurface"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/connector_line1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:srcCompat="@drawable/ic_empty_step1"
+        app:tint="@color/colorOnBackground"
+        />
+
+    <View
+        android:id="@+id/connector_line1"
+        android:layout_width="32dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/secondaryIndicatorDividerColor"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_step2"
+        app:layout_constraintEnd_toStartOf="@+id/iv_step2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_step1"
+        app:layout_constraintTop_toTopOf="@+id/iv_step2" />
+
+    <ImageView
+        android:id="@+id/iv_step2"
+        style="@style/DefaultStepperColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/connector_line2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/connector_line1"
+        app:layout_constraintTop_toTopOf="@+id/iv_step1"
+        app:srcCompat="@drawable/ic_empty_step2"
+        app:tint="@color/secondaryIndicatorColor" />
+
+    <View
+        android:id="@+id/connector_line2"
+        android:layout_width="32dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/secondaryIndicatorDividerColor"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_step3"
+        app:layout_constraintEnd_toStartOf="@+id/iv_step3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_step2"
+        app:layout_constraintTop_toTopOf="@+id/iv_step3" />
+
+    <ImageView
+        android:id="@+id/iv_step3"
+        style="@style/DefaultStepperColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/connector_line2"
+        app:layout_constraintTop_toTopOf="@+id/iv_step2"
+        app:srcCompat="@drawable/ic_empty_step3"
+        app:tint="@color/secondaryIndicatorColor" />
+
+    <TextView
+
+        android:id="@+id/tv_signup_instruction"
+        style="@style/TextAppearance.ChatApp.TitleMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_instruction"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_step2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_signup_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_signup_instruction">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/full_name"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_id_or_phone"
+        style="@style/Widget.ChatApp.IdPhone.TextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/til_signup_name"
+        app:layout_constraintStart_toEndOf="@+id/btn_region_select"
+        app:layout_constraintTop_toBottomOf="@+id/til_signup_name"
+        app:prefixTextAppearance="@style/TextAppearance.ChatApp.BodyMedium">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_id_or_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/id_or_phone"
+            android:inputType="phone"
+            android:minHeight="@dimen/_48sdp"
+            android:padding="0dp"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_region_select"
+        style="@style/Widget.ChatApp.Region.Button"
+        android:layout_width="@dimen/_96sdp"
+        android:gravity="center"
+        android:paddingEnd="8dp"
+        android:text="@string/region"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/til_signup_name"
+        app:icon="@drawable/ic_arrow_down_24"
+        app:iconGravity="end"
+        app:iconTint="@color/colorPrimaryContainer"
+        app:layout_constraintTop_toTopOf="@+id/til_id_or_phone" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintEnabled="false"
+        app:helperText="@string/helper_pwd"
+        app:layout_constraintEnd_toEndOf="@+id/til_id_or_phone"
+        app:layout_constraintStart_toStartOf="@+id/btn_region_select"
+        app:layout_constraintTop_toBottomOf="@+id/til_id_or_phone"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorPrimaryContainer">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="0dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_confirm_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintEnabled="false"
+        app:helperText="@string/helper_pwd_confirm"
+        app:layout_constraintEnd_toEndOf="@+id/til_password"
+        app:layout_constraintStart_toStartOf="@+id/til_password"
+        app:layout_constraintTop_toBottomOf="@+id/til_password"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorPrimaryContainer">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="0dp"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        style="@style/Widget.ChatApp.Filled.Button"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/btn_next"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

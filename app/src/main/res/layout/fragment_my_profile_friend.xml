@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOnPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+
+        android:id="@+id/toolbarFriend"
+        layout="@layout/toolbar_arrow_search"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/toolbarSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_back_arrowhead"
+            app:layout_constraintBottom_toBottomOf="@+id/sv_friend"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sv_friend" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sv_friend"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:autofillHints="Search"
+            android:background="@drawable/search_background"
+            android:textAlignment="center"
+            android:textColor="@color/chat_grey_900"
+            android:textSize="@dimen/_8sdp"
+            app:iconifiedByDefault="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_search_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:queryHint="Search for friend by name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarFriend" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyProfileFriend"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorSurface"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

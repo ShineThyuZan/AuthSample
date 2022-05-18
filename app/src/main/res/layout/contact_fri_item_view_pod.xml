@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_48sdp"
+    android:layout_margin="@dimen/margin_small"
+    android:background="@color/white">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivContactFriend"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        tools:srcCompat="@drawable/place_holder" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvContactFriName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="@color/colorOnBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivContactFriend"
+        app:layout_constraintTop_toTopOf="@+id/ivContactFriend"
+        tools:text="Secret lab" />
+
+    <TextView
+        android:id="@+id/tv_contact_fri_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_16sdp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodySmall"
+        android:textColor="@color/colorPrimaryContainer"
+        app:layout_constraintBottom_toBottomOf="@+id/ivContactFriend"
+        app:layout_constraintStart_toStartOf="@+id/tvContactFriName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

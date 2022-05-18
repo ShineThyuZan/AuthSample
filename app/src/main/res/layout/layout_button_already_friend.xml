@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_already_friend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_already_friends"
+        style="@style/Widget.ChatApp.Normal.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_42sdp"
+        android:drawableLeft="@drawable/ic_already_friend"
+        android:drawablePadding="0dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/friend"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+        android:textColor="@color/colorOnSurface"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/colorOnSurface" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

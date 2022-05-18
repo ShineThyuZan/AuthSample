@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.ChatApp.BottomNavigationView.Surface" parent="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemIconTint">@color/bottom_nav_item</item>
+        <item name="itemTextColor">@color/bottom_nav_item</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.ChatApp.LabelLarge</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.ItemImage" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/margin_medium</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/colorError</item>
+    </style>
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+    <style name="ProfileHeaderText">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/design_default_color_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="ProfileItemText" parent="DiscoverItemText">
+        <item name="android:padding">12dp</item>
+    </style>
+    <style name="DiscoverItemText">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="DefaultStepperColor">
+        <item name="android:strokeColor">@color/colorOnSurfaceInverse</item>
+    </style>
+
+    <!--Shape Appearance for large components like side and bottom navigation drawers-->
+    <style name="ShapeAppearance.ChapApp.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/margin_card_regular</item>
+    </style>
+
+    <!--Shape Appearance for region button-->
+    <style name="ShapeAppearance.ChapApp.Region.Button" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="cornerSizeTopRight">0%</item>
+        <item name="cornerSizeBottomRight">0%</item>
+    </style>
+
+    <!--Shape Appearance for normal button-->
+    <style name="ShapeAppearance.ChapApp.Normal.Button" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">50%</item>
+        <item name="cornerSizeTopLeft">50%</item>
+        <item name="cornerSizeBottomRight">50%</item>
+        <item name="cornerSizeBottomLeft">50%</item>
+    </style>
+
+    <style name="Transparent.ChatApp.Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">#00000000</item>
+    </style>
+
+    <style name="cursorColor" parent="Widget.AppCompat.SearchView">
+<!--        <item name="android:autoCompleteTextViewStyle">@style/cursorStyle</item>-->
+        <item name= "android:textCursorDrawable">@drawable/cursor</item>
+        <item name="android:editTextBackground">@color/black</item>
+    </style>
+
+    <style name="cursorStyle" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/bottomSheetStyle"
+    android:id="@+id/bs_send_audio"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:text="0:36"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.ChatApp.TitleMedium"
+        android:textColor="@color/colorOnBackground" />
+
+
+    <View
+        android:id="@+id/divider_title"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/buttonBackgroundColor" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_audio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/iv_audio_recorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_audio_recorder" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_stop_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_audio_recorder"
+            app:layout_constraintEnd_toStartOf="@+id/iv_audio_recorder"
+            app:layout_constraintTop_toTopOf="@+id/iv_audio_recorder"
+            app:srcCompat="@drawable/ic_stop_audio" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_send_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_audio_recorder"
+            app:layout_constraintStart_toEndOf="@+id/iv_audio_recorder"
+            app:layout_constraintTop_toTopOf="@+id/iv_audio_recorder"
+            app:srcCompat="@drawable/ic_send_audio" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_audio_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_audio_timer_background" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_audio_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_audio_recorder"
+            app:layout_constraintEnd_toEndOf="@+id/iv_audio_recorder"
+            app:layout_constraintStart_toStartOf="@+id/iv_audio_recorder"
+            app:layout_constraintTop_toTopOf="@+id/iv_audio_recorder" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_audio_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_audio_recording" />
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/tv_audio_record_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/audio_record_instruction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_audio_recorder" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

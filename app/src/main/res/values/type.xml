@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.ChatApp.DisplayLarge" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">57sp</item>
+        <item name="lineHeight">64dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.DisplayMedium" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">45sp</item>
+        <item name="lineHeight">52dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.DisplaySmall" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">36sp</item>
+        <item name="lineHeight">44dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.HeadlineLarge" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">32sp</item>
+        <item name="lineHeight">40dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.HeadlineMedium" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">28sp</item>
+        <item name="lineHeight">36dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.HeadlineSmall" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">24sp</item>
+        <item name="lineHeight">32dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.TitleLarge" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">22sp</item>
+        <item name="lineHeight">28dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.TitleMedium" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="lineHeight">24dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.TitleSmall" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorOnBackground</item>
+        <item name="lineHeight">20dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.BodyLarge" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorOnBackground</item>
+        <item name="lineHeight">24dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.BodyMedium" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorOnBackground</item>
+        <item name="lineHeight">20dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.BodySmall" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="lineHeight">16dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/colorOnBackground</item>
+        <item name="lineHeight">20dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.LabelLarge" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">20dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.LabelMedium" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorOnBackground</item>
+        <item name="lineHeight">16dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="TextAppearance.ChatApp.LabelSmall" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="lineHeight">11dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.ErrorSmall" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="lineHeight">20dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatApp.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+</resources>

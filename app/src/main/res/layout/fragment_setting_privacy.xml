@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorOnPrimary"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbarPrivacyAndSecurity"
+        layout="@layout/toolbar_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPrivacyAndSecurity" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBlockList"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:drawableStart="@drawable/ic_block"
+        android:drawableEnd="@drawable/ic_right"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:text="@string/block_list"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="@color/colorOnBackground"
+        app:layout_constraintEnd_toEndOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/divider4"
+        tools:text="Secret lab" />
+
+
+    <View
+        android:layout_marginTop="@dimen/_4sdp"
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginStart="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvBlockList"
+        app:layout_constraintStart_toStartOf="@+id/tvBlockList"/>
+
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_two_factor"
+        android:drawablePadding="@dimen/_8sdp"
+        android:text="@string/stirng_towfactorauth"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="@color/colorOnBackground"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBlockList" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="48dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:thumb="@drawable/switch_thumb_selector"
+        app:trackTint="@color/switch_track_color_state"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+    <include
+        android:id="@+id/two_factor_status"
+        layout="@layout/layout_two_factor_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

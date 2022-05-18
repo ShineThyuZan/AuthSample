@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/drawable/background_item_status.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/drawable/ic_back.xml" value="0.18611111111111112" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/drawable/ic_logo.xml" value="0.22685185185185186" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/drawable/ic_undraw_welcome.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/drawable/ripple_effect.xml" value="0.25833333333333336" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/fragment_business_one.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/fragment_order_all.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/fragment_profile_setting.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/fragment_register.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/item_list.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/sheet_phone_no_exist.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/shimmer_placeholder_item_list.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/toolbar_top_lvl.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/toolbar_top_lvl_primary.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/top_lvl_chat.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/top_lvl_contact.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/top_lvl_dashboard.xml" value="0.2421875" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/top_lvl_discover.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/layout/top_lvl_profile.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/UKnow/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable-v24/bg_checked_circle_checkbox.xml" value="0.347" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable-v24/bg_color_white_conor_small.xml" value="0.1555" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable-v24/bg_conor_white.xml" value="0.1385" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable-v24/ic_friend_empty_dark.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable-v24/ic_setting_logout.xml" value="0.366" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_chat_receive_bubble.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_chat_receive_bubble_last.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_chat_send_bubble.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_chat_send_bubble_last.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_item_card.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_item_list.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_item_status.xml" value="0.193" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_item_status_completed.xml" value="0.193" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_item_status_delivered.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_item_status_pending.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_item_status_processing.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_item_status_refunded.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/background_item_status_refunding.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_border_black.xml" value="0.1345" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_border_green.xml" value="0.235" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_border_red.xml" value="0.163" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_bottom_sheet.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_checkbox_circle_grey.xml" value="0.163" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_checked_checkbox.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_checked_radio_button.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_checked_square_checkbox.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_color_transparent.xml" value="0.1915" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_conor_black.xml" value="0.16" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_conor_green.xml" value="0.1065" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_conor_red.xml" value="0.16" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_cornor_black_small.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_gradient_grey.xml" value="0.263" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_radio_button_circle_green.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_spinner_grey.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_toolbar_color_transparent.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_transparent_with_black_border.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_transparent_with_white_border.xml" value="0.16" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_uncheck_checkbox.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/bg_uncheck_radio_button.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/cursor.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/custom_radio_background.xml" value="0.1135" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/custom_radio_normal.xml" value="0.1135" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/custom_radio_selected.xml" value="0.1135" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/dialog_user_unavailable_create_gp.xml" value="0.14" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_account_locked.xml" value="0.184" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_add.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_add_feed.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_add_friend.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_already_block.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_already_friend.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_apple.xml" value="0.2705" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_arrow_down_24.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_arrow_right.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_arrow_right_head.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_audio_recorder.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_audio_recording.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_audio_timer_background.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_avatar.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_back.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_back_arrow_head_whit.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_back_arrow_white.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_back_arrowhead.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_block.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_block_bg.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_block_user.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_block_white.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_camera.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_chat_msg.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_close.xml" value="0.2195" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_feed.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_gallery.xml" value="0.193" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_google.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_group.xml" value="0.235" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_leave.xml" value="0.366" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_logo.xml" value="0.301" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_mark.xml" value="0.2855" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_mice_gray.xml" value="0.2955" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_newsfeed.xml" value="0.2705" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_phone.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_profile.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_profile_unavailable.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_qr.xml" value="0.193" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_recycler.xml" value="0.205" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_remove.xml" value="0.193" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_right.xml" value="0.2695" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_scan.xml" value="0.267" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_search.xml" value="0.2625" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_send.xml" value="0.1595" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_send_audio.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_send_message.xml" value="0.158" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_setting.xml" value="0.193" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_shake.xml" value="0.267" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_step3.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_toolbar_search.xml" value="0.165" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_type_two_business.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_undraw_welcome.xml" value="0.1935" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_wechat.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_wifi_off.xml" value="0.208" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ic_yk_logo.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/img_no_internet.xml" value="0.2585" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/launcher_icon_foreground.xml" value="0.174" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/ripple_effect.xml" value="0.193" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/search_background.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/selected_mark.xml" value="0.1035" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/selected_mark_empty.xml" value="0.1035" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/switch_thumb_selector.xml" value="0.1265" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/switch_track_selector.xml" value="0.131" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/yk_logo.xml" value="0.1135" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/drawable/you_know_logo.xml" value="0.117" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/activity_main.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/bg_color_white_conor_small.xml" value="0.36666666666666664" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/bottom_sheet_message_send.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/bottom_sheet_more_action_profile.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/chat_recent_msg.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/coming_soon_dialog.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/contact_fri_item_view_pod.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/content_profile_edit.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/country_filter_bottom_sheet.xml" value="0.21042084168336672" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/country_items_view_pod.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/cover_image_pick_bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/create_gp_bottom_sheet.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/dialog_confirmation.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/dialog_exit_confirmation.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/dialog_fail_to_create_gp.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/dialog_full_screen_image.xml" value="0.26735218508997427" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/dialog_logout_confirmation.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/dialog_no_internet.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/dialog_unblock.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/dialog_user_unavailable_create_gp.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/ez.xml" value="0.2638259292837715" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/feed_user_activity_view_pod.xml" value="1.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_block_list.xml" value="0.20625566636446055" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_block_profile.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_all.xml" value="0.2" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_gp_audio.xml" value="0.2731936725096195" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_gp_member.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_gp_member_list.xml" value="0.2731936725096195" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_gp_photo.xml" value="0.2731936725096195" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_gp_video.xml" value="0.2731936725096195" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_group.xml" value="0.2302810516772439" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_new_group.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_new_message.xml" value="0.22" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_presonal.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_search.xml" value="0.12829084830756374" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_contact_profile.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_contact_profile_unavailable.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_create_group.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_feed.xml" value="0.2638259292837715" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_feed_search.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_forget_pwd_otp_verify.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_forget_pwd_question.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_forget_pwd_successful.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_forget_pwd_two_factor.xml" value="0.26518585675430645" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_fri_contact.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_fri_contact_block_state.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_friend_profile.xml" value="0.22" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_home.xml" value="0.13664855829502717" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_home_feeds.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_home_message.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_home_people.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_home_search.xml" value="0.21350861287398004" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_home_service.xml" value="0.2" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_intit_member.xml" value="0.13538461538461538" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_language_select.xml" value="0.20262919310970082" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_my_prfile_info_edit.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile.xml" value="0.2388888888888889" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile_favorites.xml" value="0.1408274132887589" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile_feed.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile_friend.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile_info_edit.xml" value="0.22" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile_sticker.xml" value="0.1408274132887589" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_new_gp_create.xml" value="0.18" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_new_message.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_noti.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_noti_activity.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_noti_friend_request.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_order_delivered.xml" value="0.17497733454215775" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_order_processing.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_otp.xml" value="0.12829084830756374" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_password_forget.xml" value="0.2" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_password_forget_phone_number.xml" value="0.12829084830756374" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_password_forget_verify_otp.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_password_forget_verify_select.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_password_reset.xml" value="0.22" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_password_reset_successful.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_personal_chat_room.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_phone_no_not_found.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_profile_edit.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_profile_setting.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_pwd_reset_successful.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_register.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_request_confirmation.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_setting_privacy.xml" value="0.1" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_signup.xml" value="0.2756119673617407" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_signup_question.xml" value="0.12511584800741427" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_signup_question_a.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_signup_security_question.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_signup_verify.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_terms_of_service.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_top_feedss.xml" value="0.22" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/fragment_top_profile_setting.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/image_pick_bottom_sheet.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/incorrect_dialog.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/item_container_send_message.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/item_list.xml" value="0.5" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/item_retry.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/language_select_view_pod.xml" value="0.18" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_already_block.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_block_list.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_block_list_view_pod.xml" value="0.22393472348141433" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_button_add_friend.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_button_already_block.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_button_already_friend.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_button_friend_requested.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_button_loading.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_button_requested_accept.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_contact_profile_lock.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_fri_list_view_pod.xml" value="0.11575428332636857" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_fri_request_confirmation.xml" value="0.20625566636446055" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_gp_fri_list.xml" value="0.1931097008159565" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_loading.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_myday.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_no_internet.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_no_internet_language_select.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_selected_friend_list.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_selected_member_list_view_pod.xml" value="0.5" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/layout_two_factor_status.xml" value="0.67" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/offline_state.xml" value="0.22" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/profile_image_pick_bottom_sheet.xml" value="0.25385312783318226" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/selected_user_view_pod.xml" value="0.5902777777777778" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/shimer_user_activity_feed.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/shimmer_country_layout.xml" value="0.2" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/shimmer_myday_item.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/shimmer_myday_layout.xml" value="0.2394185549380077" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/shimmer_place_item_feed.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/shimmer_placeholder_item_list.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/simple_spinner_item.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_arrow.xml" value="0.3625" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_arrow_search.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_chat.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_edit_my_profile.xml" value="0.22" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_feed.xml" value="0.2638259292837715" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_fri_contacts.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_home.xml" value="0.25" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_no_arrow.xml" value="0.4263764404609475" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_other_lvl.xml" value="0.2302810516772439" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_other_lvl_primary.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_profile.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_profile_unavailable.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_search.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_top_lvl.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_top_lvl_primary.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/toolbar_with_close.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/top_lvl_chat.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/top_lvl_feed.xml" value="0.17090069284064666" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/top_lvl_home.xml" value="0.33" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/top_lvl_products.xml" value="0.3009833262077811" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/layout/top_lvl_setting.xml" value="0.14709569577935647" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27685185185185185" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/menu/user_action_menu.xml" value="0.11770157553290084" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.117" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/mipmap-anydpi-v26/launcher_icon.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/mipmap-anydpi-v26/launcher_icon_round.xml" value="0.3675" />
+        <entry key="..\:/Galaxy Techno/youknow_social_android_xml/app/src/main/res/xml/file_paths.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/activity_main.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_business_info.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_business_one.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_business_three.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_business_two.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_business_welcome.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_home.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_login.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_order_all.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_order_completed.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_order_delivered.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_order_pending.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_order_processing.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_order_refund.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_otp.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_password_forget.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/fragment_type_choose.xml" value="0.2677083333333333" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/top_lvl_contact.xml" value="0.2105978260869565" />
+        <entry key="..\:/TZO Android Workspace/Pilot Project/app/src/main/res/layout/top_lvl_discover.xml" value="0.2105978260869565" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable-v24/bg_color_white_conor_small.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable-v24/ic_setting_about.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/background_item_status.xml" value="0.1075" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_border_black.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_border_green.xml" value="0.152" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_border_red.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_bottom_sheet.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_checkbox_circle.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_checked_checkbox.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_checked_radio_button.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_color_transparent.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_gradient_grey.xml" value="0.2315" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_more_action_bottom_sheet.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_radio_button_circle_green.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_toolbar_color_transparent.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_uncheck_checkbox.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/bg_uncheck_radio_button.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_already_friend.xml" value="0.197" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_arrow_right.xml" value="0.1435" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_back_arrowhead.xml" value="0.12" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_bg_checked_radio_button.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_block_user.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_close.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_copy_profile_link.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_empty_step1.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_empty_step2.xml" value="0.134" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_friend_requested.xml" value="0.197" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_report_profile.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_request_accept.xml" value="0.197" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_request_cancel.xml" value="0.1755" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_splash_screen.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ic_step1.xml" value="0.1275" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/img_no_internet.xml" value="0.157" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ripple_effect.xml" value="0.129" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/ripple_effect_dark.xml" value="0.131" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/textinputlayout_boxstroke_error_state.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/drawable/textinputlayout_stroke_color.xml" value="0.187" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/bg_border_green.xml" value="0.12829084830756374" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/bg_gradient_grey.xml" value="0.1138737985791893" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/bottom_sheet_message_send.xml" value="0.1316339323025491" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/bottom_sheet_more_action_profile.xml" value="0.22" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/content_profile_edit.xml" value="0.1408274132887589" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/country_filter_bottom_sheet.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/country_items_view_pod.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/cover_image_pick_bottom_sheet.xml" value="0.33" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/dialog_confirmation.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/dialog_exit_confirmation.xml" value="0.1912964641885766" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/dialog_no_internet.xml" value="0.1912964641885766" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/dialog_unfriend_confirmation.xml" value="0.19817073170731708" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/feed_user_activity_view_pod.xml" value="0.1912964641885766" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/feed_view_pods.xml" value="0.1912964641885766" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_all.xml" value="0.1912964641885766" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_group.xml" value="0.1408274132887589" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_chat_search.xml" value="0.21932449764856776" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_contact_profile.xml" value="0.18" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_contact_profile_unavailable.xml" value="0.18" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_feed.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_feed_search.xml" value="0.1408274132887589" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_forget_pwd_otp_verify.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_forget_pwd_question.xml" value="0.18" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_fri_contact.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_fri_contact_detail.xml" value="0.25" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_friend_profile.xml" value="0.25" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_home_feeds.xml" value="0.1408274132887589" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_home_search.xml" value="0.17089755213055305" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_language_select.xml" value="0.16" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile_feed.xml" value="0.12536564981195153" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile_friend.xml" value="0.10906811533639783" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile_info_edit.xml" value="0.26036767849508335" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_my_profile_sticker.xml" value="0.1408274132887589" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_password_forget.xml" value="0.17777777777777778" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_password_forget_otp_validate.xml" value="0.2" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_password_forget_phone_number.xml" value="0.12954450480568325" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_password_forget_verify_otp.xml" value="0.1144578313253012" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_password_forget_verify_select.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_password_reset.xml" value="0.18540344514959203" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_profile_edit.xml" value="0.1408274132887589" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_setting_privacy.xml" value="0.1408274132887589" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_signup.xml" value="0.18" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_signup_question.xml" value="0.12327622231508567" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_signup_security_question.xml" value="0.33" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_signup_verify.xml" value="0.25" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/fragment_top_profile_setting.xml" value="0.13333333333333333" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/image_pick_bottom_sheet.xml" value="0.23086789226165028" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/item_container_receive_message.xml" value="0.12223150856665274" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/item_container_receive_message_last.xml" value="0.12223150856665274" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/item_container_send_message.xml" value="0.12223150856665274" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/language_select_view_pod.xml" value="0.22" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_add_friend_lock.xml" value="0.28815733219324496" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_already_block.xml" value="0.33" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_button_add_friend.xml" value="0.18333333333333332" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_button_add_friend_lock.xml" value="0.28815733219324496" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_button_already_block.xml" value="0.13539490179690764" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_button_already_friend.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_button_friend.xml" value="0.25" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_button_friend_requested.xml" value="0.2066115702479339" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_button_loading.xml" value="0.18" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_button_requested_accept.xml" value="0.18" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_contact_profile_lock.xml" value="0.22" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_load_more.xml" value="0.1273798730734361" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_loading.xml" value="0.1303802758044296" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_no_internet.xml" value="0.2539546814878153" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_no_internet_language_select.xml" value="0.25" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/layout_type_radio.xml" value="0.12641036356038446" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/offline_state.xml" value="0.12641036356038446" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/profile_image_pick_bottom_sheet.xml" value="0.12641036356038446" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/sheet_phone_no_exist.xml" value="0.1303802758044296" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/shimmer_myday_item.xml" value="0.1303802758044296" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/shimmer_place_item_feed.xml" value="0.11262014208106978" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/shimmer_place_item_profile.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/shimmer_placeholder_item_list.xml" value="0.1170079398244881" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/simple_spinner_item.xml" value="0.1" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/textinputlayout_endicon_color_state.xml" value="0.19084315503173163" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_arrow.xml" value="0.33" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_arrow_search.xml" value="0.17089755213055305" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_edit_my_profile.xml" value="0.26036767849508335" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_feed.xml" value="0.12641036356038446" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_fri_contacts.xml" value="0.2321504916631039" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_home.xml" value="0.28815733219324496" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_no_arrow.xml" value="0.2321504916631039" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_profile.xml" value="0.33" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_profile_unavailable.xml" value="0.17089755213055305" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_search.xml" value="0.28815733219324496" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_top_lvl.xml" value="0.28815733219324496" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/toolbar_top_lvl_primary.xml" value="0.2321504916631039" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/top_lvl_feed.xml" value="0.11262014208106978" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/layout/top_lvl_home.xml" value="0.22" />
+        <entry key="..\:/TZO Android Workspace/youknow_social_android_xml/app/src/main/res/menu/bottom_nav_menu.xml" value="0.24102997045166738" />
+        <entry key="..\:/Users/Android 01/AndroidStudioProjects/seller/app/src/main/res/layout/fragment_favourite_category.xml" value="0.1" />
+        <entry key="..\:/Users/Android 01/AndroidStudioProjects/seller/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/Android 01/AndroidStudioProjects/seller/app/src/main/res/layout/fragment_password_forget.xml" value="0.1" />
+        <entry key="..\:/Users/Android 01/AndroidStudioProjects/seller/app/src/main/res/layout/fragment_register.xml" value="0.1" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable-v24/logo_android.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable-v24/vd_handwriting_android_design.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_image.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_list.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_profile.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_completed.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_delivered.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_pending.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_processing.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_refunded.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/background_item_status_refunding.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/custom_radio_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/custom_radio_normal.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/custom_radio_selected.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_back.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_back_white.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_camera.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_close.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_facebook.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_folder.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_gallery.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_google.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_home.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_logo.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_otp_new.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_otp_verification.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_phone.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_phone_verify.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_profile.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_pwd_forget_otp.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_pwd_forget_phone.xml" value="0.2165" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_pwd_reset_successful.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_toolbar_profile.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_toolbar_profile_white.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_toolbar_search.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_toolbar_search_white.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_type_branded.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_type_business.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_type_business_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_type_individual.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_type_two_business_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_undraw_branded.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_undraw_welcome.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_upload_avatar.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/ic_wechat.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/indicator_normal_dot.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/indicator_selected_dot.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/indicator_selector.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/launcher_icon_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/seller_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/drawable/seller_launcher_icon_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw320dp/activity_main.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw320dp/top_lvl_employees.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw320dp/top_lvl_message.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw320dp/top_lvl_orders.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw320dp/top_lvl_products.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout-sw600dp/item_retry.xml" value="0.275" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/activity_main.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/app_toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_business_info.xml" value="0.3282828282828283" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_home.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_all.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_completed.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_delivered.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_pending.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_processing.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_order_refund.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_otp.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_password_forget.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_password_forget_otp_validate.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_password_forget_phone_number.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_password_reset.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_password_reset_successful.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_profile_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/fragment_type_choose.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/item_list.xml" value="0.5" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/item_retry.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/layout_no_internet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/layout_type_radio.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/sheet_phone_no_exist.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/shimmer_placeholder_item_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/test.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/toolbar_other_lvl.xml" value="0.333786231884058" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/toolbar_other_lvl_primary.xml" value="0.35054347826086957" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/toolbar_top_lvl.xml" value="0.35054347826086957" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/toolbar_top_lvl_primary.xml" value="0.35054347826086957" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/top_lvl_dashboard.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/top_lvl_employees.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/top_lvl_message.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/top_lvl_orders.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/layout/top_lvl_products.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/kyawlinnthant/StudioProjects/android_shop_seller/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-land/fragment_login.xml" value="0.31040564373897706" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-sw320dp-land/fragment_login.xml" value="0.31040564373897706" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-sw320dp/fragment_login.xml" value="0.35597826086956524" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-sw720dp-land/fragment_login.xml" value="0.23560910307898258" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-sw720dp/fragment_login.xml" value="0.33" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-w320dp-land/fragment_login.xml" value="0.31040564373897706" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout-w720dp-land/fragment_login.xml" value="0.31040564373897706" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/activity_main.xml" value="0.365036231884058" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_favourite_category.xml" value="0.365036231884058" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_home.xml" value="0.3546195652173913" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_login.xml" value="0.365036231884058" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_password_add_new.xml" value="0.365036231884058" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_password_forget.xml" value="0.36666666666666664" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_register.xml" value="0.35144927536231885" />
+        <entry key="..\:/galaxy-techno/SELLER/app/src/main/res/layout/fragment_type_choose.xml" value="0.35144927536231885" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

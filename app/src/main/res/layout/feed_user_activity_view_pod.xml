@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:layout_margin="@dimen/_4sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_feed_user_activity"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/colorSurface"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="@dimen/_1sdp"
+        app:cardCornerRadius="@dimen/_24sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivFeedUserActivity"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_apple"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:strokeColor="@color/colorSurface"
+        app:strokeWidth="@dimen/_1sdp"
+        android:padding="@dimen/_1sdp"
+/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/tvFeedUserName"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        app:layout_constraintEnd_toEndOf="@+id/cv_feed_user_activity"
+        app:layout_constraintStart_toStartOf="@+id/cv_feed_user_activity"
+        app:layout_constraintTop_toBottomOf="@+id/cv_feed_user_activity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

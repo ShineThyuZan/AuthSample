@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bs_send_message"
+    style="?attr/bottomSheetStyle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_320sdp"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:text="@string/send"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.ChatApp.TitleMedium"
+        android:textColor="@color/colorOnBackground" />
+
+
+    <View
+        android:id="@+id/divider_title"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/buttonBackgroundColor" />
+
+    <TextView
+        android:id="@+id/tv_take_photo_or_video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_icon_camera"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="@string/take_photo_or_video"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="@color/colorOnBackground" />
+
+    <View
+        android:id="@+id/divider_one"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/buttonBackgroundColor" />
+
+    <TextView
+        android:id="@+id/tv_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_gallery"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="@string/gallery"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="@color/colorOnBackground" />
+
+    <View
+        android:id="@+id/divider_two"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/buttonBackgroundColor" />
+
+    <TextView
+        android:id="@+id/tv_sticker"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_sticker"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="@string/stickers"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+
+    <View
+        android:id="@+id/divider_three"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/buttonBackgroundColor" />
+
+    <TextView
+        android:id="@+id/tv_document"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_document"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="@string/document"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+
+    <View
+        android:id="@+id/divider_four"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/buttonBackgroundColor" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_contact"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="@string/contact"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+
+    <View
+        android:id="@+id/divider_five"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/buttonBackgroundColor" />
+
+
+</LinearLayout>

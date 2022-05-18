@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_receive_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_chat_receive_bubble"
+        android:padding="16dp"
+        android:text="Hello Android"
+        android:textColor="@color/natural_grey_900"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:visibility="invisible"
+        android:id="@+id/tv_msg_time_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Yesterday"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelSmall"
+        android:textColor="@color/colorOnSecondary"
+        app:layout_constraintStart_toStartOf="@+id/tv_receive_message"
+        app:layout_constraintTop_toBottomOf="@+id/tv_receive_message" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

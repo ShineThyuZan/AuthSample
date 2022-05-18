@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/init_lang_navigation"
+    app:startDestination="@id/initLangSelectFragment">
+
+    <fragment
+        android:id="@+id/initLangSelectFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.other_lvl_dest.language_select.InitLangSelectFragment"
+        android:label="InitLangSelectFragment"
+        tools:layout="@layout/fragment_language_select">
+        <action
+            android:id="@+id/action_initLangSelectFragment_to_auth_navigation"
+            app:destination="@id/auth_navigation" />
+        <action
+            android:id="@+id/action_initLangSelectFragment_to_initLangNoInternetFragment"
+            app:destination="@id/initLangNoInternetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/initLangNoInternetFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.other_lvl_dest.language_select.InitLangNoInternetFragment"
+        android:label="InitLangNoInternetFragment"
+        tools:layout="@layout/layout_no_internet_language_select">
+    <action
+           android:id="@+id/action_initLangNoInternetFragment_to_initLangSelectFragment"
+           app:destination="@id/initLangSelectFragment" />
+        </fragment>
+
+</navigation>

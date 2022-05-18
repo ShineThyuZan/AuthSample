@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSurface">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        style="@style/Widget.ChatApp.Filled.Button"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/btn_login"
+        app:layout_constraintEnd_toEndOf="@+id/til_phone"
+        app:layout_constraintStart_toEndOf="@+id/btn_login_to_sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/til_password" />
+
+    <TextView
+        android:id="@+id/tvForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/btn_pwd_forget"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelMedium"
+        android:textColor="@color/chat_green_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_phone"
+        style="@style/Widget.ChatApp.IdPhone.TextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/margin_auth_horizontal_default"
+        android:gravity="center"
+        app:endIconTint="@color/colorPrimaryContainer"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/welcome"
+        app:layout_constraintStart_toEndOf="@+id/btn_region_select"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:prefixTextAppearance="@style/TextAppearance.ChatApp.BodyMedium">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawablePadding="8dp"
+            android:hint="@string/id_or_phone"
+            android:inputType="phone"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_region_select"
+        style="@style/Widget.ChatApp.Region.Button"
+        android:layout_width="@dimen/_100sdp"
+        android:paddingEnd="8dp"
+        android:text="@string/region"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        android:textColor="@color/colorOnBackground"
+        app:layout_constraintStart_toStartOf="@+id/welcome"
+        app:icon="@drawable/ic_arrow_down_24"
+        app:iconTint="@color/colorPrimaryContainer"
+        app:iconGravity="end"
+        app:layout_constraintTop_toTopOf="@+id/til_phone" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorPrimaryContainer"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@id/til_phone"
+        app:layout_constraintStart_toStartOf="@id/btn_region_select"
+        app:layout_constraintTop_toBottomOf="@+id/til_phone"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:prefixTextAppearance="@style/TextAppearance.ChatApp.BodyMedium">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            style="@style/TextAppearance.ChatApp.BodyMedium"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_pwd"
+            android:inputType="textPassword"
+            android:padding="0dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_112sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/welcome_back"
+        android:textAppearance="@style/TextAppearance.ChatApp.HeadlineMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:text="@string/or_continue_with"
+        android:textColor="@color/colorOnSecondary"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvForgetPassword" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@color/bottomSheetOutlineColor"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOr"
+        app:layout_constraintEnd_toStartOf="@+id/tvOr"
+        app:layout_constraintTop_toTopOf="@+id/tvOr" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@color/bottomSheetOutlineColor"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOr"
+        app:layout_constraintStart_toEndOf="@+id/tvOr"
+        app:layout_constraintTop_toTopOf="@+id/tvOr" />
+
+    <Button
+        android:id="@+id/btn_login_to_sign_in"
+        style="@style/ChatApp.OutlineButton"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/signup"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_login"
+        app:layout_constraintEnd_toStartOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/til_password" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="parent"
+        app:srcCompat="@drawable/ic_wechat" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/tvOr"
+        app:srcCompat="@drawable/ic_apple" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:srcCompat="@drawable/ic_google" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

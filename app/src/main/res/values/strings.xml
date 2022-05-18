@@ -1,0 +1,412 @@
+<resources>
+    <string name="app_name">You Know</string>
+    <string name="label_edit_photo" translatable="false">Edit Photo</string>
+
+
+    //profile setting
+    <string name="profile_account">Seller Account</string>
+    <string name="profile_general">General Information</string>
+    <string name="profile_statement">Account Statement</string>
+    <string name="profile_notification">Notifications</string>
+    <string name="profile_chat">Chat Settings</string>
+    <string name="profile_language">Languages</string>
+    <string name="profile_tutorial">Tutorial</string>
+    <string name="profile_help">Seller Help Center</string>
+    <string name="profile_feedback">Feedback</string>
+    <string name="profile_about">About</string>
+    <string name="profile_logout">Logout</string>
+
+    //order pager
+    <string name="order_all">All</string>
+    <string name="presonal">Personal</string>
+    <string name="group">Groups</string>
+    <string name="order_delivered">Delivered</string>
+    <string name="order_refunded">Refunded</string>
+    <string name="order_refunding">Refunding</string>
+    <string name="order_completed">Completed</string>
+
+    //shortcuts
+    <string name="you_know_shortcut_short_label">Home</string>
+    <string name="you_know_shortcut_long_label">Welcome You Know</string>
+    <string name="you_know_shortcut_disabled_message">Disabled</string>
+
+    //bottom navigation
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+
+
+    <string name="btn_nav_home">Home</string>
+    <string name="btn_nav_chat">Chats</string>
+    <string name="btn_nav_feeds">Feeds</string>
+    <string name="btn_nav_setting">Setting</string>
+    <string name="btn_nav_group">Groups</string>
+
+    //Title
+    <string name="title_pwd_forget">Forget Password</string>
+    <string name="title_otp_verify">OTP Verification</string>
+    <string name="title_pwd_reset">Reset Password</string>
+
+    <string name="title_login">Login</string>
+    <string name="title_type">Choose your business type</string>
+    <string name="title_register">Register</string>
+    <string name="title_terms">Terms and Conditions</string>
+    <string name="title_info">Business Types</string>
+    <string name="title_profile">Profile</string>
+
+    //image
+    <string name="desc_pwd_forget">Enter the new password below to change your password.</string>
+    <string name="desc_pwd_forget_helper">We will send you an OTP to reset your password.</string>
+    <string name="desc_otp_verification">We need to verify your identity.</string>
+    <string name="desc_otp_verification_helper">Please enter your phone number. You will receive an OTP</string>
+    <string name="desc_pwd_reset">Your identity has been verified. Set your new password.</string>
+    <string name="desc_pwd_reset_helper">If you didn\'t receive a code!</string>
+    <string name="desc_pwd_reset_successful">Password Reset Successful!</string>
+    <string name="desc_pwd_reset_successful_helper">You have successfully reset your password. Please use your new password when logging in.</string>
+    <string name="desc_register_terms">By clicking “Register”, you agree to our <font color='#F54A06'>Terms of Use</font> and <font color='#F54A06'>Privacy Policy</font></string>
+    <string name="desc_type_choose">Select Your Account Type</string>
+
+    <string name="title_phone_existed">A user with the phone number %s already exists.</string>
+
+    <string name="helper_pwd">Must be at least 8 characters</string>
+    <string name="helper_pwd_confirm">Matching password must be re-entered</string>
+
+    <string name="hint_phone">Phone Number</string>
+    <string name="hint_pwd">Password</string>
+    <string name="hint_pwd_new">New Password</string>
+    <string name="hint_pwd_confirm">Confirm Password</string>
+    <string name="hint_email">Recovery Email</string>
+    <string name="hint_name">Enter Your Full Name</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_verify">Verify</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_pwd_forget">Forget Password ?</string>
+    <string name="btn_otp">Get Code</string>
+    <string name="btn_terms">Accept Terms and Conditions</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_resend">Resend</string>
+    <string name="hint_code">Validation Code</string>
+
+
+    <string name="business_type_1">Individual</string>
+    <string name="business_type_2">Business</string>
+    <string name="business_type_3">Branded</string>
+
+    <string name="prefix_phone">09</string>
+    <string name="suffix_email">\@gmail.com</string>
+
+    //login
+    <string name="error_login_phone">Incorrect phone number</string>
+    <string name="error_login_phone_empty">Enter phone number</string>
+    <string name="error_login_password_empty">Enter password</string>
+    <string name="error_login_pwd_wrong">Incorrect password</string>
+    <string name="error_login_pwd_8">Password must be at least 8</string>
+
+    //register
+    <string name="error_register_name">Enter your name</string>
+    <string name="error_register_email">Enter your correct email</string>
+    <string name="error_register_phone">Enter correct number</string>
+    <string name="error_register_phone_empty">Enter phone number</string>
+    <string name="error_register_otp">Enter the correct code</string>
+    <string name="error_register_pwd">Password must be at least 8</string>
+    <string name="error_register_pwd_empty">Enter Password</string>
+    <string name="error_register_confirm_pwd_empty">Enter Confirm Password</string>
+    <string name="error_register_pwd_confirm">Passwords do not match</string>
+
+    //display
+    <string name="snack_internet">Internet connection Active</string>
+    <string name="snack_terms">Please read and accept our Terms and Conditions</string>
+    <string name="snack_no_internet">No internet connection! Please make your connection fixed!</string>
+    <string name="snack_request_otp_success">OTP Verification Code is sending to your phone. Please Wait!!!</string>
+    <string name="snack_request_otp_fail">OTP request fail</string>
+    <string name="snack_request_otp_verify_success">Verification Success</string>
+    <string name="snack_request_otp_verify_fail">Verification Fail</string>
+    <string name="snack_request_login_success">Login Success</string>
+    <string name="snack_request_login_fail">Login Fail</string>
+    <string name="snack_request_register_success">Register Success</string>
+    <string name="snack_request_register_fail">Register Fail</string>
+    <string name="snack_request_pwd_add_success">Update Password Success</string>
+    <string name="snack_request_pwd_add_fail">Update Password Fail</string>
+    <string name="snack_type_choose">Select your account type</string>
+    <string name="display_camera">Camera</string>
+    <string name="display_gallery">Gallery</string>
+    <string name="saving">Saving</string>
+    <string name="verifying">Verifying</string>
+    <string name="dialog_login">Signing In…</string>
+    <string name="dialog_logout">Signing Out…</string>
+    <string name="dialog_register">Registering…</string>
+    <string name="dialog_pwd_new">Updating New Password…</string>
+    <string name="dialog_get_otp">Requesting OTP From Server…</string>
+    <string name="dialog_verify_otp">Verifying OTP…</string>
+    <string name="dialog_saving_language">Saving Language Data…</string>
+    <string name="caption_no_internet_description">We couldn\'t connect to the internet. Please check your network settings and try again</string>
+    <string name="enable_access">Enable Access</string>
+    <string name="title_business_info_welcome">Hello Welcome!</string>
+    <string name="description_business_info_welcome">
+        Hello darkness, my old friend\n
+        I\'ve come to talk with you again\n
+        Because a vision softly creeping\n
+        Left its seeds while I was sleeping\n
+        And the vision that was planted in my brain\n
+        Still remains within the sound of silence</string>
+
+    <string name="title_business_info_one">Individual</string>
+    <string name="description_business_info_one">
+        In restless dreams, I walked alone\n
+        Narrow streets of cobblestone\n
+        Neath the halo of a street lamp\n
+        I turned my collar to the cold and damp\n
+        When my eyes were stabbed by the flash of a neon light\n
+        That split the night and touched the sound of silence</string>
+
+    <string name="title_business_info_two">Business</string>
+    <string name="description_business_info_two">
+        And in the naked light, I saw\n
+        Ten thousand people, maybe more\n
+        People talking without speaking\n
+        People hearing without listening\n
+        People writing songs that voices never shared\n
+        And no one dared disturb the sound of silence</string>
+
+    <string name="title_business_info_three">Branded</string>
+    <string name="description_business_info_three">
+        Fools" said I, "You do not know\n
+        I\'ve come to talk with you again\n
+        Silence like a cancer grows\n
+        Hear my words that I might teach you\n
+        Take my arms that I might reach you\n
+        But my words, like silent raindrops fell and echoed in the wells of silence</string>
+    <string name="login_description">Login your account</string>
+    <string name="welcome_back">Let\'s keep in touch with friends!</string>
+    <string name="login_sync">Login to sync your content</string>
+    <string name="continue_wechat">Continue with Wechat</string>
+    <string name="continue_google">Continue with Google</string>
+    <string name="pwRequirement">Enter the phone number associated with your phone number</string>
+    <string name="pwForget">Forget Password</string>
+    <string name="id_or_phone">Phone Number</string>
+    <string name="tryAnotherWay">Try another way</string>
+    <string name="retry">Try Again</string>
+    <string name="selectAcountry">Select a country</string>
+    <string name="region">Region</string>
+    <string name="verifyCode">Verification code</string>
+
+    <string name="recent">Recent</string>
+    <string name="answerQues">Answer the following questions to reset your password</string>
+    <string name="enter">Enter your answer</string>
+
+
+    <!--SignUp-->
+    <string name="signup_instruction">Sign up with phone number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="accout_security">Account</string>
+    <string name="msg_noti">Notification</string>
+    <string name="tv_privacy">Privacy</string>
+    <string name="general">General</string>
+    <string name="help_and_feedback"><![CDATA[Help & Support]]></string>
+    <string name="verify_otp_instruction">Please type the verification code sent to</string>
+    <string name="receive_otp_question">Didn\'t receive a code?</string>
+    <string name="resend">Resend</string>
+    <string name="security_questions">Security Questions</string>
+    <string name="security_notice">Please choose three questions and type your answers correctly because you will be asked again if you forget your password.</string>
+    <string name="enter_answer">Enter your answer</string>
+    <string name="select_question">Select Question</string>
+    <string name="select_question_a">Select Question A</string>
+    <string name="select_question_b">Select Question B</string>
+    <string name="select_question_c">Select Question C</string>
+    <string name="read_and_accept">I have read and accept the</string>
+    <string name="terms_of_service">Terms of Serivce.</string>
+    <string name="start">Start</string>
+    <string name="signup">Sign Up</string>
+    <string name="sing_up">Sign Up...</string>
+    <string name="toolbar_forget_password">Forget Password</string>
+    <string name="type_same_pwd">Type the same password</string>
+    <string name="friends"> Friends</string>
+    <string name="messages">Messages</string>
+    <string name="feeds">Feeds</string>
+    <string name="services"> Services</string>
+    <string name="pwd_forgot_instructions">Please choose a method to reset your password.</string>
+    <string name="get_otp_code">Get OTP code</string>
+    <string name="answer_security_question">Answer Security Questions</string>
+    <string name="change_phone_no">Change Phone Number</string>
+    <string name="sry_no_acc">Sorry, no account found for this </string>
+    <string name="reseting_acc">Would you like to continue resetting password for this account?</string>
+    <string name="not_you">Not you?</string>
+    <string name="language_select_instruction">Please select a language you want to use</string>
+    <string name="search_for_chat">Search for chats</string>
+    <string name="otp_expire">OTP expires in</string>
+    <string name="invalid_otp">Invalid Otp</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="favorites">Favorites</string>
+    <string name="stickers">Strickers</string>
+    <string name="update">Update</string>
+    <string name="updating">Updating....</string>
+    <string name="enter_your_bio">Short bio text goes here. . .</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="edit_profile_photo">Edit Profile Photo</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="birth_date">Date of birth</string>
+    <string name="edit_cover">Edit cover</string>
+    <string name="edit_cover_photo">Edit cover photo</string>
+    <string name="username">Username</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="gender">Gender</string>
+    <string name="bio">You know what\'s cooking. BOOM!!!!</string>
+    <string name="hit_bio">Enter your bio</string>
+    <string name="hint_birth_date">Date of Birth</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="upload_cover">Upload Cover</string>
+    <string name="services_3">Services (4)</string>
+    <string name="scan_with_qr_code">Scan QR Code</string>
+    <string name="shake_phone">Shake Phone</string>
+    <string name="people_nearby">People Nearby</string>
+    //setting
+    <string name="setting_account">Account</string>
+    <string name="setting_notifications">Notifications</string>
+    <string name="setting_appearance">Appearance</string>
+    <string name="setting_privacy_security">Privacy &amp; Security</string>
+    <string name="setting_help_and_support">Help &amp; Support</string>
+    <string name="setting_about">About</string>
+    <string name="setting_logout">Logout</string>
+    <string name="stirng_towfactorauth">Two Factor Authentication</string>
+    <string name="my_notes">My Notes</string>
+    <string name="waiting">Waiting.....</string>
+    <string name="toolbar_title_forget_pwd">Forget Password</string>
+    <string name="select_birthdate">Select Birthdate</string>
+    <string name="fill_your_full_name">Fill your full name</string>
+    <string name="fill_your_bio">Fill your bio</string>
+    <string name="fill_your_email">Fill your emil address</string>
+    <string name="fill_your_birthday">Fill your birth date</string>
+    <string name="choose_gender_type">Choose your gender type</string>
+    <string name="success">Success!</string>
+    <string name="pwd_change_success">You have successfully change your password now.</string>
+    <string name="setting">Setting</string>
+    <string name="privacy_and_security">Privacy And Security</string>
+    <string name="no_search_history_yet">No search history yet!</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="contact">Contact</string>
+    <string name="call">call</string>
+    <string name="chat">chat</string>
+    <string name="mute">mute</string>
+    <string name="view_profile">View profile</string>
+    <string name="block">Block</string>
+    <string name="premission_denied">Permission Denied!</string>
+    <string name="goAppSetting">You cannot use this featuer.You can enable it in the app setting.</string>
+    <string name="no_acc">No account match with your contacts!</string>
+    <string name="have_register_app">While your contacts register in our app, their accounts will appear here.</string>
+    <string name="no_contact">No contacts!</string>
+    <string name="no_contact_in_phone">There is no contact in your phone to search account.</string>
+
+    <string name="caption_no_internet">No Internet Connection</string>
+    <string name="no_internet_instruction">Please check your internet connection and try to reload.</string>
+    <string name="caption_try_again">Try Again</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="requested">Requested</string>
+    <string name="friend">Friend</string>
+    <string name="accept">Accept</string>
+    <string name="btn_request_cancel">Cancel</string>
+    <string name="btn_request_accept">Accept</string>
+    <string name="feed_count">%d Feed</string>
+    <string name="feeds_count">%d Feeds</string>
+    <string name="friend_count">%d Friend</string>
+    <string name="friends_count">%d Friends</string>
+    <string name="profile_account_locked">This Account is Locked</string>
+    <string name="send_request_instruction">Send a friend request to see all photos and videos.</string>
+    <string name="account_unavailable">This Account Isn\'t available</string>
+    <string name="account_unavailable_reason">This could be because the user deactivated the account or blocked you.</string>
+    <string name="loading">Loading</string>
+    <string name="checking">Checking...</string>
+    <string name="people">People</string>
+    <string name="block_list">Blocked List</string>
+    <string name="activity">Activity</string>
+    <string name="friend_request">Friend Request</string>
+    <string name="decline">Decline</string>
+    <string name="response">Responsing.....</string>
+    <string name="no_one_here">No one is Here</string>
+    <string name="no_user_in_block_list">There is no user in your block list</string>
+    <string name="unfriend">Unfriend</string>
+    <string name="unfriend_warning">Are you sure you want to remove %s as your friend?</string>
+    <string name="more_action">More Actions</string>
+    <string name="copy_profile_link">Copy profile link</string>
+    <string name="report_profile">Report profile</string>
+    <string name="block_user">Block user</string>
+    <string name="block_warning">Blocking someone unfriends them and makes it so you will not see each other\'s activities and also will not be able to send messages or call.</string>
+    <string name="block_user_title">Block User?</string>
+    <string name="blocked">Blocked</string>
+    <string name="already_block_user">You Blocked This User</string>
+    <string name="unblock_instruction">To send messages to or call each other, unblock first.</string>
+    <string name="search_to_create_friend">Who do you want to chat with?</string>
+    <string name="create_new_group">Create New Group</string>
+    <string name="new_message">New message</string>
+    <string name="Unblock">Unblock</string>
+    <string name="unblock_user">Unblock User?</string>
+    <string name="unblock_description">If you unblock, this user may be able to see your profile or contact you.</string>
+    <string name="you_block_title">You Blocked This User</string>
+    <string name="block_description">To send messages to or call each other, unblock first.</string>
+    <string name="search_people">Search People</string>
+    <string name="new_group">New Group</string>
+    <string name="include_members">/50 members</string>
+    <string name="member">Member</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="save_image">Saved image</string>
+    <string name="remove">Remove</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="group_name">Group name</string>
+    <string name="user_unavailable">Users Unavailable</string>
+    <string name="user_unavailable_description">of the users you selected to add as members for this group are unavailable.</string>
+    <string name="okay">OK</string>
+    <string name="fail_to_create_gp">Failed To Create Group</string>
+    <string name="fail_to_create_gp_description">All of the users you selected to add as members for this group are unavailable.</string>
+    <string name="logout">Logout?</string>
+    <string name= "update_profile_info">Update profile information....</string>
+    <string name="logout_description">Do you want to logout?</string>
+    <string name="leave">leave</string>
+    <string name="account_is_available">This Account Isn’t Available</string>
+    <string name="user_unavailable_descriptions">This could be because the user deactivated the account or blocked you.</string>
+    <string name="or_continue_with">OR CONTINUE WITH</string>
+    <string name="type_message">Type message</string>
+    <string name="welcome_chat_text">No message history here yet, just send a message to say hello!</string>
+    <string name="send">Send</string>
+    <string name="take_photo_or_video">Take a photo or video</string>
+    <string name="photo_and_video_gallery">Photo and video gallery</string>
+    <string name="document">Document</string>
+    <string name="audio_record_instruction">Hold to record audio</string>
+    <string name="no_internet_description">You have lost connection to the internet.This app is offline.</string>
+    <string name="fri_request_send_description">No one has sent you a friend request, but you can find people to send friend requsets first.</string>
+    <string name="no_friend_request">No Friend Request</string>
+    <string name="find_people">Find People</string>
+    <string name="no_people_description">This could be because you have no friends or no contacts.</string>
+    <string name="no_people_here">No People Here</string>
+    <string name="already_register">This account is already registered</string>
+    <string name="chat_group_member">%d / %d member</string>
+    <string name="group_name_count">%d/%d</string>
+    <string name="group_name_placeholder">Group name</string>
+    <string name="group_name_error">Group name has to be filled</string>
+    <string name="create">Create</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="froget_password">Forget Password</string>
+    <string name="terms_condition">Terms and Condition Coming soon later.</string>
+    <string name="forget_pwd">Forgot Password</string>
+    <string name="coming_soon">Work In Progress</string>
+    <string name="in_progress">Currently we are working on the awesome features. Please stay tuned.</string>
+    <string name="email_address">Email address</string>
+
+    <string name="create_group_empty_title">No Member</string>
+    <string name="friends_empty_title">No Friend</string>
+    <string name="friends_empty_description">There is no friend in your account. Add more friends to communicate.</string>
+    <string name="create_group_empty_description">There is no member to create group. Add more friends to communicate.</string>
+
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tb_profile_unavailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_profile_unavailable"/>
+
+    <ImageView
+        android:id="@+id/iv_account_unavailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tv_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_profile_unavailable" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/account_unavailable"
+        android:textAppearance="@style/TextAppearance.ChatApp.TitleMedium"
+        app:layout_constraintBottom_toTopOf="@+id/tv_reason"
+        app:layout_constraintEnd_toEndOf="@+id/iv_account_unavailable"
+        app:layout_constraintStart_toStartOf="@+id/iv_account_unavailable"
+        app:layout_constraintTop_toBottomOf="@+id/iv_account_unavailable" />
+
+    <TextView
+        android:id="@+id/tv_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/account_unavailable_reason"
+        android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_info"
+        app:layout_constraintStart_toStartOf="@+id/tv_info"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

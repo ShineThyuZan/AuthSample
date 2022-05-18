@@ -1,0 +1,221 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Base theme, all common styling here-->
+    <style name="Base.ChatApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!--Material shape attributes-->
+        <!--        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.ChatApp.SmallComponent</item>-->
+        <!--        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.ChatApp.MediumComponent</item>-->
+        <!--        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.ChatApp.LargeComponent</item>-->
+
+        <!--Material type attributes-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.ChatApp.DisplayLarge</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.ChatApp.DisplayMedium</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.ChatApp.DisplaySmall</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.ChatApp.HeadlineLarge</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.ChatApp.HeadlineMedium</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.ChatApp.HeadlineSmall</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.ChatApp.TitleLarge</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.ChatApp.TitleMedium</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.ChatApp.BodyLarge</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.ChatApp.BodyMedium</item>
+        <item name="textAppearanceButton">@style/TextAppearance.ChatApp.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.ChatApp.LabelLarge</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.ChatApp.LabelSmall</item>
+
+
+        <!--Default Colors-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorPrimaryContainer">@color/colorPrimaryContainer</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryContainer</item>
+        <item name="colorOnSurfaceVariant">@color/colorOnSurfaceVariant</item>
+        <item name="colorOnSurfaceInverse">@color/colorOnSurfaceInverse</item>
+        <item name="colorOnSurface">@color/pureWhite</item>
+        <item name="colorOnError">@color/colorOnPrimary</item>
+        <item name="colorSurface">@color/colorOnPrimary</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="colorSecondary">@null</item>
+        <item name="colorSecondaryVariant">@null</item>
+        <item name="background">@null</item>
+        <item name="bottomSheetOutlineColor">@color/bottomSheetOutlineColor</item>
+        <item name="iconColor">@color/chat_grey_900</item>
+        <item name="colorAccent">@color/colorOnPrimary</item>
+
+
+
+        <!--Custom attr colors-->
+        <item name="dividerColor">@color/colorOnSurfaceInverse</item>
+
+
+        <!--Default Text Colors-->
+        <item name="android:textColorPrimary">@color/colorOnBackground</item>
+        <item name="android:textColorPrimaryInverse">@color/colorOnSecondary</item>
+
+        <!--Platform attributes-->
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+        <item name="android:statusBarColor">@color/immersive_sys_ui</item>
+
+        <!--Default styles-->
+        <item name="bottomSheetDialogTheme">@style/ChatApp.AppBottomSheetDialogTheme</item>
+        <item name="textInputStyle">@style/Widget.ChatApp.TextInputLayout</item>
+        <item name="buttonStyle">@style/Widget.ChatApp.Filled.Button</item>
+        <item name="snackbarStyle">@style/ChatApp.SnackBar</item>
+    </style>
+
+    <style name="ChatApp.SecondaryTextColor">
+        <item name="android:textColor" tools:ignore="PrivateResource">@color/colorPrimaryContainer
+        </item>
+    </style>
+
+    <!--Text Input Layout-->
+    <style name="Widget.ChatApp.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="hintTextColor">@color/colorPrimaryContainer</item>
+        <item name="helperTextTextColor">@color/colorPrimaryContainer</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.ChatApp.LabelSmall</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="hintTextAppearance">@style/TextAppearance.ChatApp.BodySmall</item>
+        <item name="errorTextAppearance">@style/TextAppearance.ChatApp.ErrorSmall</item>
+        <item name="boxCornerRadiusTopStart">@dimen/_24sdp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_24sdp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_24sdp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/_24sdp</item>
+        <item name="boxStrokeColor">@color/textinputlayout_boxstroke_normal_state</item>
+        <item name="boxStrokeErrorColor">@color/textinputlayout_boxstroke_error_state</item>
+        <item name="android:height">48dp</item>
+    </style>
+
+    <style name="Widget.ChatApp.IdPhone.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="hintTextColor">@color/colorOnSecondary</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="hintTextAppearance">@style/TextAppearance.ChatApp.BodySmall</item>
+        <item name="prefixTextAppearance">@style/TextAppearance.ChatApp.BodyMedium</item>
+        <item name="prefixTextColor">@color/colorPrimaryContainer</item>
+        <item name="errorTextAppearance">@style/TextAppearance.ChatApp.ErrorSmall</item>
+        <item name="boxCornerRadiusTopStart">0dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="boxStrokeColor">@color/textinputlayout_boxstroke_normal_state</item>
+        <item name="boxStrokeErrorColor">@color/textinputlayout_boxstroke_error_state</item>
+        <item name="android:height">48dp</item>
+    </style>
+
+
+    <style name="ChatApp" parent="Base.ChatApp" />
+
+    <style name="ChatApp.Color">
+        <item name="colorPrimary">@color/item_completed_text</item>
+        <item name="colorPrimaryVariant">@color/chat_green_300</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Splash" parent="Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/ChatApp</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_yk_logo2</item>
+    </style>
+
+    <style name="Widget.ChatApp.Region.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorOnSecondary</item>
+        <item name="android:layout_height">59dp</item>
+        <item name="android:layout_marginTop">-5.5dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.ChapApp.Region.Button</item>
+    </style>
+
+    <style name="Widget.ChatApp.Normal.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="strokeColor">@color/colorOnSurface</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.ChatApp.LabelLarge</item>
+<!--        <item name="android:colorControlHighlight">@color/chat_green_800</item>-->
+        <item name="shapeAppearance">@style/ShapeAppearance.ChapApp.Normal.Button</item>
+    </style>
+
+    <style name="Widget.ChatApp.Filled.Button" parent="Widget.MaterialComponents.Button">
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.ChatApp.LabelLarge</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.ChapApp.Normal.Button</item>
+        <item name="materialThemeOverlay">@style/CustomButtonThemeOverlay</item>
+
+    </style>
+
+    <style name="CustomButtonThemeOverlay">
+        <item name="colorOnPrimary">@color/pureWhite</item>
+    </style>
+
+
+    <style name="Widget.ChatApp.SignUp.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">@color/colorSurface</item>
+        <item name="strokeColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.ChatApp.LabelLarge</item>
+        <item name="android:colorControlHighlight">@color/chat_green_300</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.ChapApp.Normal.Button</item>
+    </style>
+
+
+    <style name="Widget.ChatApp.Spinner" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">@color/chat_green_400</item>
+    </style>
+
+    <style name="Widget.ChatApp.Circle.Image" parent="ShapeAppearanceOverlay.ItemImage">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+
+    <style name="AnimationForDialog">
+        <item name="android:windowEnterAnimation">
+            @anim/slide_in_up
+        </item>
+        <item name="android:windowExitAnimation">
+            @anim/slide_out_down
+        </item>
+    </style>
+
+    <!-- BottomSheet -->
+    <style name="ChatApp.AppBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="ChatApp.OutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Seller.LargeComponent</item>
+        <item name="strokeColor">@color/colorPrimary</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet</item>
+    </style>
+
+    <style name="ProfileItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="drawableRightCompat">@drawable/ic_right</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ChatApp.SnackBar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:background">@color/snackBarBackgroundColor</item>
+        <item name="android:textColor">@color/snackBarTextColor</item>
+    </style>
+
+
+
+
+
+</resources>

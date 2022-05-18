@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSurface"
+    android:overScrollMode="never">
+
+
+        <include
+            android:id="@+id/toolbarForgetPwd"
+            layout="@layout/toolbar_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:text="@string/answerQues"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.ChatApp.BodyLarge"
+            android:textColor="@color/colorOnBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarForgetPwd" />
+
+        <TextView
+            android:id="@+id/tvQuestionOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+            android:textColor="@color/colorOnBackground"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            tools:text="Question 1" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilQuestOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/tvQuestionOne"
+            app:layout_constraintStart_toStartOf="@+id/tvQuestionOne"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuestionOne">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAnsOne"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/enter"
+                android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tvQuestionTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+            android:textColor="@color/colorOnBackground"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/tilQuestOne"
+            tools:text="Question 2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilQuesTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/tvQuestionOne"
+            app:layout_constraintStart_toStartOf="@+id/tvQuestionOne"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuestionTwo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAnsTwo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/enter"
+                android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tvQuestionThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+            android:textColor="@color/colorOnBackground"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/tilQuesTwo"
+            tools:text="Question 3" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilQuesThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/tvQuestionOne"
+            app:layout_constraintStart_toStartOf="@+id/tvQuestionOne"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuestionThree">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAnsThree"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/enter"
+                android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnQuestionNext"
+        style="@style/Widget.ChatApp.Filled.Button"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="24dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+        android:textColor="@color/colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

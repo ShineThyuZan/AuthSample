@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="chatBoxColor">@color/natural_grey_900</color>
+    <color name="serviceViewBackgroundColor">@color/natural_grey_800</color>
+    <color name="cardBackgroundColor">@color/natural_grey_800</color>
+    <color name="textColorSecondary">@color/natural_grey_200</color>
+    <color name="bottomNavIconColor">@color/natural_grey_200</color>
+    <color name="colorSurfaceInverse">@color/natural_grey_900</color>  <!--green_500-->
+    <color name="colorPrimary">@color/chat_green_500</color>  <!--green_500-->
+    <color name="colorOnPrimary">@color/pureBlack</color>  <!--pure_black-->
+    <color name="colorOnFaintButton">@color/natural_grey_700</color>
+    <color name="colorOnSurfaceInverse">@color/natural_grey_600</color>  <!--natural_gray_600-->
+    <color name="colorPrimaryContainer">@color/natural_grey_400</color>  <!--natural_gray_400-->
+    <color name="colorOnSurfaceVariant">@color/natural_grey_300</color>  <!--natural_gray_300-->
+    <color name="colorOnSelect">@color/natural_grey_400</color>  <!--natural_gray_400-->
+    <color name="colorOnBackground">@color/natural_grey_50</color>  <!--natural_gray_50-->
+    <color name="colorSurface">@color/natural_grey_900</color>  <!--natural_gray_900-->
+    <color name="colorOnSecondary">@color/natural_grey_500</color>  <!--natural_gray_500-->
+    <color name="colorSurfaceVariant">@color/natural_grey_800</color>  <!--natural_gray_800 -->
+    <color name="snackBarTextColor">@color/natural_grey_900</color>  <!--gray_50-->
+    <color name="checkBoxNormalColor">@color/natural_grey_400</color>  <!--gray_50-->
+    <color name="checkBoxCheckedColor">@color/chat_green_500</color>  <!--natural_gray_400-->
+    <color name="bottomSheetTextColor">@color/natural_grey_50</color>
+    <color name="primaryIndicatorColor">@color/natural_grey_50</color>
+    <color name="primaryIndicatorDividerColor">@color/natural_grey_50</color>
+    <color name="primaryIndicatorTextColor">@color/pureBlack</color>
+    <color name="secondaryIndicatorDividerColor">@color/natural_grey_600</color>
+    <color name="secondaryIndicatorColor">@color/natural_grey_600</color>
+    <color name="bottomSheetBackgroundColor">@color/natural_grey_900</color>
+    <color name="colorOnSurface">@color/pureWhite</color>  <!--pure_black-->
+    <color name="iconTintColor">@color/natural_grey_50</color>
+    <color name="iconStrokeColor">@color/natural_grey_900</color>
+    <color name="iconColor">@color/natural_grey_50</color>
+
+
+
+
+    <!--opacity_color-->
+    <color name="bottomSheetOutlineColor">#33FFFFFF</color>  <!--white_20-->
+    <color name="snackBarBackgroundColor">#E6FFFFFF</color>  <!--white_85-->
+
+</resources>

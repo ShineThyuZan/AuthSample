@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/dest_top_home">
+
+    <include app:graph="@navigation/auth_navigation" />
+
+    <fragment
+        android:id="@+id/dest_top_home"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.TopHomeFragment"
+        android:label="@string/btn_nav_home"
+        tools:layout="@layout/top_lvl_home">
+
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@+id/home_search" />
+        <action
+            android:id="@+id/action_dest_top_home_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+        <action
+            android:id="@+id/action_dest_top_home_to_friContactFragment"
+            app:destination="@id/friContactFragment" />
+        <action
+            android:id="@+id/action_dest_top_home_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/home_search"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.HomeSearchFragment"
+        android:label="Home Search"
+        tools:layout="@layout/fragment_home_search">
+        <action
+            android:id="@+id/action_home_search_to_friendProfileFragment"
+            app:destination="@id/friendProfileFragment">
+            <argument
+                android:name="userId"
+                app:argType="long" />
+            <argument
+                android:name="navFlag"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_home_search_to_dest_top_home"
+            app:destination="@id/dest_top_home" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/dest_top_chat"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.chat.TopChatFragment"
+        android:label="@string/btn_nav_chat"
+        tools:layout="@layout/top_lvl_chat">
+        <action
+            android:id="@+id/action_dest_top_chat_to_chatSearchFragment"
+            app:destination="@id/chatSearchFragment" />
+        <action
+            android:id="@+id/action_addButton_to_newMessage"
+            app:destination="@id/newMessage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dest_top_feeds"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.feeds.TopFeedsFragment"
+        android:label="@string/btn_nav_feeds"
+        tools:layout="@layout/top_lvl_feed">
+
+        <action
+            android:id="@+id/action_dest_top_feeds_to_feedSearchFragment"
+            app:destination="@id/feedSearchFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/dest_top_setting"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.setting.TopSettingFragment"
+        android:label="@string/btn_nav_setting"
+        tools:layout="@layout/fragment_top_profile_setting">
+        <action
+            android:id="@+id/action_logout_to_auth_navigation"
+            app:destination="@+id/auth_navigation" />
+        <action
+            android:id="@+id/action_dest_top_setting_to_settingPrivacyFragment"
+            app:destination="@id/settingPrivacyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatSearchFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.chat.tabs.all.ChatSearchFragment"
+        android:label="ChatSearchFragment"
+        tools:layout="@layout/fragment_chat_search" />
+    <fragment
+        android:id="@+id/feedSearchFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.feeds.FeedSearchFragment"
+        android:label="FeedSearchFragment"
+        tools:layout="@layout/fragment_feed_search" />
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.my_profile.profile.MyProfileFragment"
+        android:label="MyProfileFragment"
+        tools:layout="@layout/fragment_my_profile">
+        <action
+            android:id="@+id/action_myProfileFragment_to_myProfileEditFragment"
+            app:destination="@id/myProfileEditFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_myProfileFriendFragment"
+            app:destination="@id/myProfileFriendFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_fullScreenImageFragment"
+            app:destination="@id/fullScreenImageFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out">
+            <argument
+                android:name="imageUrl"
+                app:argType="string" />
+            <argument
+                android:name="navFlag"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_myProfileFragment_to_dest_top_home"
+            app:destination="@id/dest_top_home" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/myProfileEditFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.my_profile.profile.MyProfileInfoEditFragment"
+        android:label="My Profile Edit"
+        tools:layout="@layout/fragment_my_profile_info_edit">
+        <action
+            android:id="@+id/action_myProfileEditFragment_to_imagePickBottomSheet"
+            app:destination="@id/profileImagePickBottomSheet" />
+        <action
+            android:id="@+id/action_myProfileEditFragment_to_pickCoverImageBottomSheetFragment"
+            app:destination="@id/coverImagePickBottomSheet" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/profileImagePickBottomSheet"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.my_profile.profile.PickProfileImageBottomSheetFragment"
+        tools:layout="@layout/profile_image_pick_bottom_sheet" />
+    <dialog
+        android:id="@+id/coverImagePickBottomSheet"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.my_profile.profile.PickCoverImageBottomSheetFragment"
+        android:label="PickCoverImageBottomSheetFragment"
+        tools:layout="@layout/cover_image_pick_bottom_sheet" />
+
+    <fragment
+        android:id="@+id/settingPrivacyFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.setting.SettingPrivacyFragment"
+        android:label="SettingPrivacyFragment"
+        tools:layout="@layout/fragment_setting_privacy">
+        <action
+            android:id="@+id/action_settingPrivacyFragment_to_blockListFragment"
+            app:destination="@id/blockListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friContactFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.contact.FriContactFragment"
+        android:label="FriContactFragment"
+        tools:layout="@layout/fragment_fri_contact">
+        <action
+            android:id="@+id/action_friContactFragment_to_friContactProfileFragment"
+            app:destination="@id/friContactProfileFragment" />
+        <action
+            android:id="@+id/action_friContactFragment_to_friContactBlockStateFragment"
+            app:destination="@id/friContactBlockStateFragment">
+            <argument
+                android:name="state"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_friContactFragment_to_dest_top_home"
+            app:destination="@id/dest_top_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/friContactProfileFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.contact.FriContactProfileFragment"
+        android:label="FriContactProfileFragment"
+        tools:layout="@layout/fragment_contact_profile">
+        <action
+            android:id="@+id/action_friContactProfileFragment_to_moreActionBottomSheetFragmentContact"
+            app:destination="@id/moreActionBottomSheetFragmentContact" />
+        <action
+            android:id="@+id/action_friContactProfileFragment_to_personalChatRoomFragment"
+            app:destination="@id/personalChatRoomFragment">
+            <argument
+                android:name="receiverName"
+                app:argType="string" />
+            <argument
+                android:name="receiverId"
+                app:argType="long" />
+            <argument
+                android:name="roomId"
+                app:argType="long" />
+            <argument
+                android:name="imageUrl"
+                app:argType="string" />
+            <argument
+                android:name="navFlag"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_friContactProfileFragment_to_friContactFragment"
+            app:destination="@id/friContactFragment" />
+        <action
+            android:id="@+id/action_friContactProfileFragment_to_fullScreenImageFragment"
+            app:destination="@id/fullScreenImageFragment">
+            <argument
+                android:name="imageUrl"
+                app:argType="string" />
+            <argument
+                android:name="navFlag"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/myProfileFriendFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.my_profile.friend.MyProfileFriendFragment"
+        android:label="MyProfileFriendFragment"
+        tools:layout="@layout/fragment_my_profile_friend">
+        <action
+            android:id="@+id/my_profile_friend_to_friend_profile_fragment"
+            app:destination="@id/friendProfileFragment">
+            <argument
+                android:name="userId"
+                app:argType="long" />
+            <argument
+                android:name="navFlag"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_myProfileFriendFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blockListFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.setting.blockList.BlockListFragment"
+        android:label="BlockListFragment"
+        tools:layout="@layout/fragment_block_list">
+        <action
+            android:id="@+id/action_blockListFragment_to_blockProfileFragment"
+            app:destination="@id/blockProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.notification.NotificationFragment"
+        android:label="NotificationFragment"
+        tools:layout="@layout/fragment_noti">
+        <action
+            android:id="@+id/action_notificationFragment_to_friendRequestConfirmationFragment"
+            app:destination="@id/friendRequestConfirmationFragment"
+            app:popUpToInclusive="true">
+            <argument
+                android:name="requesterId"
+                app:argType="long" />
+            <argument
+                android:name="requestedId"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_notificationFragment_to_dest_top_home"
+            app:destination="@id/dest_top_home"
+            app:popUpTo="@id/dest_top_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendRequestConfirmationFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.notification.FriendRequestConfirmationFragment"
+        android:label="FriendRequestConfirmationFragment"
+        tools:layout="@layout/fragment_request_confirmation">
+        <argument
+            android:name="requesterId"
+            app:argType="long" />
+        <argument
+            android:name="requestedId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_friendRequestConfirmationFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment"
+            app:popUpTo="@id/notificationFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_friendRequestConfirmationFragment_to_fullScreenImageFragment"
+            app:destination="@id/fullScreenImageFragment">
+
+            <argument
+                android:name="imageUrl"
+                app:argType="string" />
+            <argument
+                android:name="navFlag"
+                app:argType="string" />
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/friendProfileFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.my_profile.friend.FriendProfileFragment"
+        android:label="FriendProfileFragment"
+        tools:layout="@layout/fragment_friend_profile">
+        <argument
+            android:name="userId"
+            app:argType="long" />
+        <argument
+            android:name="navFlag"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_friendProfileFragment_to_moreActionBottomSheetFragmentFriend"
+            app:destination="@id/moreActionBottomSheetFragmentFriend" />
+        <action
+            android:id="@+id/action_friendProfileFragment_to_myProfileFriendFragment"
+            app:destination="@id/myProfileFriendFragment" />
+
+        <action
+            android:id="@+id/action_friendProfileFragment_to_fullScreenImageFragment"
+            app:destination="@id/fullScreenImageFragment">
+            <argument
+                android:name="imageUrl"
+                app:argType="string" />
+            <argument
+                android:name="navFlag"
+                app:argType="string" />
+
+        </action>
+        <action
+            android:id="@+id/action_friendProfileFragment_to_home_search"
+            app:destination="@id/home_search" >
+        <argument
+            android:name="navFlag"
+            app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_friendProfileFragment_to_personalChatRoomFragment"
+            app:destination="@id/personalChatRoomFragment">
+            <argument
+                android:name="receiverName"
+                app:argType="string" />
+            <argument
+                android:name="receiverId"
+                app:argType="long" />
+            <argument
+                android:name="roomId"
+                app:argType="long" />
+            <argument
+                android:name="imageUrl"
+                app:argType="string" />
+            <argument
+                android:name="navFlag"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/newMessage"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.chat.tabs.creategp.NewMessageFragment"
+        android:label="New Message"
+        tools:layout="@layout/fragment_new_message">
+        <action
+            android:id="@+id/action_newMessage_to_initMember"
+            app:destination="@id/initMember" />
+        <action
+            android:id="@+id/action_chatNewMessageFragment_to_personalChatRoomFragment"
+            app:destination="@id/personalChatRoomFragment">
+            <argument
+                android:name="receiverName"
+                app:argType="string" />
+            <argument
+                android:name="receiverId"
+                app:argType="long" />
+            <argument
+                android:name="roomId"
+                app:argType="long" />
+            <argument
+                android:name="imageUrl"
+                app:argType="string" />
+            <argument
+                android:name="navFlag"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_chatNewMessageFragment_to_dest_top_chat"
+            app:destination="@id/dest_top_chat" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/blockProfileFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.setting.blockList.BlockProfileFragment"
+        android:label="BlockProfileFragment"
+        tools:layout="@layout/fragment_block_profile">
+        <action
+            android:id="@+id/action_blockProfileFragment_to_blockListFragment"
+            app:destination="@id/blockListFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/moreActionBottomSheetFragmentContact"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.contact.MoreActionBottomSheetFragment"
+        android:label="MoreActionBottomSheetFragment"
+        tools:layout="@layout/bottom_sheet_more_action_profile" />
+    <dialog
+        android:id="@+id/moreActionBottomSheetFragmentFriend"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.my_profile.friend.MoreActionBottomSheetFragment"
+        android:label="MoreActionBottomSheetFragment"
+        tools:layout="@layout/bottom_sheet_more_action_profile">
+        <action
+            android:id="@+id/action_moreActionBottomSheetFragmentFriend_to_myProfileFriendFragment"
+            app:destination="@id/myProfileFriendFragment"
+            app:popUpTo="@id/myProfileFriendFragment"
+            app:popUpToInclusive="true" />
+    </dialog>
+    <fragment
+        android:id="@+id/initMember"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.chat.tabs.creategp.InitMemberFragment"
+        android:label="Init Member"
+        tools:layout="@layout/fragment_intit_member">
+        <action
+            android:id="@+id/action_chatNewGroupFragment_to_chatNewMessageFragment"
+            app:destination="@id/newMessage" />
+        <action
+            android:id="@+id/action_initMember_to_createGroup"
+            app:destination="@id/createGroup" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullScreenImageFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.my_profile.profile.FullScreenImageFragment"
+        android:label="FullScreenImageFragment"
+        tools:layout="@layout/dialog_full_screen_image">
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+        <argument
+            android:name="navFlag"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/createGroup"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.chat.tabs.creategp.CreateGroupFragment"
+        android:label="Create Group"
+        tools:layout="@layout/fragment_create_group">
+        <action
+            android:id="@+id/action_chatNewGroupCreateFragment_to_chatNewGroupFragment"
+            app:destination="@id/initMember" />
+        <action
+            android:id="@+id/action_chatNewGroupCreateFragment_to_createGpImageBottomSheet"
+            app:destination="@id/createGpImageBottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatGroupMemberFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.chat.tabs.creategp.chat_gp_member.ChatGroupMemberFragment"
+        android:label="ChatGroupMemberFragment"
+        tools:layout="@layout/fragment_chat_gp_member" >
+        <argument
+            android:name="userId"
+            app:argType="long" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="headUrl"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/friContactBlockStateFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.home.contact.FriContactBlockStateFragment"
+        android:label="FriContactBlockStateFragment"
+        tools:layout="@layout/fragment_fri_contact_block_state">
+        <argument
+            android:name="state"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalChatRoomFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.chat.PersonalChatRoomFragment"
+        android:label="PersonalChatRoomFragment"
+        tools:layout="@layout/fragment_personal_chat_room">
+        <argument
+            android:name="receiverName"
+            app:argType="string" />
+        <argument
+            android:name="receiverId"
+            app:argType="long" />
+        <argument
+            android:name="roomId"
+            app:argType="long" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+        <argument
+            android:name="navFlag"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_personalChatRoomFragment_to_sendMessageBottomSheetFragment"
+            app:destination="@id/sendMessageBottomSheetFragment" />
+        <action
+            android:id="@+id/action_personalChatRoomFragment_to_sendAudioBottomSheetFragment"
+            app:destination="@id/sendAudioBottomSheetFragment" />
+        <action
+            android:id="@+id/action_personalChatRoomFragment_to_chatNewMessageFragment"
+            app:destination="@id/newMessage" />
+        <action
+            android:id="@+id/action_personalChatRoomFragment_to_friContactProfileFragment"
+            app:destination="@id/friContactProfileFragment" />
+        <action
+            android:id="@+id/action_personalChatRoomFragment_to_chatGroupMemberFragment"
+            app:destination="@id/chatGroupMemberFragment">
+            <argument
+                android:name="userId"
+                app:argType="long" />
+            <argument
+                android:name="name"
+                app:argType="string" />
+            <argument
+                android:name="headUrl"
+                app:argType="string" />
+        </action>
+
+    </fragment>
+    <dialog
+        android:id="@+id/sendMessageBottomSheetFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.chat.SendMessageBottomSheetFragment"
+        android:label="SendMessageBottomSheetFragment"
+        tools:layout="@layout/bottom_sheet_message_send" />
+    <dialog
+        android:id="@+id/sendAudioBottomSheetFragment"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.chat.SendAudioBottomSheetFragment"
+        android:label="SendAudioBottomSheetFragment"
+        tools:layout="@layout/bottom_sheet_audio_send" />
+    <dialog
+        android:id="@+id/createGpImageBottomSheet"
+        android:name="com.galaxytechno.chat.presentation.ui.top_lvl_dest.chat.tabs.creategp.chat_gp_member.CreateGpImageBottomSheet"
+        android:label="CreateGpImageBottomSheet"
+        tools:layout="@layout/create_gp_bottom_sheet"/>
+
+</navigation>

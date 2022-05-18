@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOnPrimary">
+
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/new_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    <include-->
+    <!--        android:id="@+id/toolbarCreateGroup"-->
+    <!--        layout="@layout/toolbar_with_close"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <!--    <androidx.appcompat.widget.SearchView-->
+    <!--        android:id="@+id/svFriend"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_36sdp"-->
+    <!--        android:layout_marginStart="@dimen/_16sdp"-->
+    <!--        android:layout_marginEnd="@dimen/_16sdp"-->
+    <!--        android:background="@drawable/search_background"-->
+    <!--        android:iconifiedByDefault="false"-->
+    <!--        android:queryHint="@string/search_to_create_friend"-->
+    <!--        app:defaultQueryHint="@string/search_to_create_friend"-->
+    <!--        app:iconifiedByDefault="false"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/toolbarCreateGroup"-->
+    <!--        app:queryHint="@string/search_to_create_friend" />-->
+    <!--    <com.google.android.material.button.MaterialButton-->
+    <!--        android:id="@+id/btn_create_group"-->
+    <!--        style="@style/Widget.ChatApp.Normal.Button"-->
+    <!--        android:layout_width="@dimen/_170sdp"-->
+    <!--        android:layout_height="@dimen/_48sdp"-->
+    <!--        android:layout_marginTop="@dimen/_16sdp"-->
+    <!--        android:backgroundTint="@color/colorOnPrimary"-->
+    <!--        android:drawableLeft="@drawable/ic_group"-->
+    <!--        android:drawablePadding="@dimen/_16sdp"-->
+    <!--        android:text="@string/create_new_group"-->
+    <!--        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"-->
+    <!--        android:textColor="@color/chat_green_400"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/svFriend"-->
+    <!--        app:strokeColor="@color/chat_green_400" />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/friend"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="@dimen/_16sdp"-->
+    <!--        android:text="@string/friends"-->
+    <!--        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btn_create_group" />-->
+    <!--    <com.facebook.shimmer.ShimmerFrameLayout-->
+    <!--        android:id="@+id/shimmerLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btn_create_group"-->
+    <!--        app:shimmer_repeat_mode="restart"-->
+    <!--        app:shimmer_shape="radial">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <include layout="@layout/shimmer_placeholder_item_list" />-->
+
+    <!--            <include layout="@layout/shimmer_placeholder_item_list" />-->
+
+    <!--            <include layout="@layout/shimmer_placeholder_item_list" />-->
+
+    <!--            <include layout="@layout/shimmer_placeholder_item_list" />-->
+
+    <!--            <include layout="@layout/shimmer_placeholder_item_list" />-->
+
+    <!--            <include layout="@layout/shimmer_placeholder_item_list" />-->
+
+    <!--            <include layout="@layout/shimmer_placeholder_item_list" />-->
+
+    <!--        </LinearLayout>-->
+    <!--    </com.facebook.shimmer.ShimmerFrameLayout>-->
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/rvFriendList"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginTop="@dimen/_8sdp"-->
+    <!--        android:overScrollMode="never"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/friend"-->
+    <!--        tools:itemCount="3"-->
+    <!--        tools:listitem="@layout/item_list" />-->
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/cl_no_people"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginTop="@dimen/_24sdp"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/btn_create_group">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView35"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="@dimen/_16sdp"-->
+    <!--            android:layout_marginEnd="@dimen/_16sdp"-->
+    <!--            android:text="@string/no_people_description"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textAppearance="@style/TextAppearance.ChatApp.BodyMedium"-->
+    <!--           android:textColor="@color/textColorSecondary"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView36"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="@dimen/_24sdp"-->
+    <!--            android:layout_marginBottom="@dimen/_8sdp"-->
+    <!--            android:text="@string/no_people_here"-->
+    <!--            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"-->
+    <!--            android:textColor="@color/colorOnBackground"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/textView35"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+

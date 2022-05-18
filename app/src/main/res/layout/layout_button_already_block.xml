@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_already_block">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_already_blocks"
+        style="@style/Widget.ChatApp.Filled.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_42sdp"
+        android:backgroundTint="@color/colorError"
+        android:drawableLeft="@drawable/ic_already_block"
+        android:drawablePadding="0dp"
+        android:gravity="center"
+        android:text="@string/blocked"
+        android:textAppearance="@style/TextAppearance.ChatApp.LabelLarge"
+        android:textColor="@color/colorOnPrimary"
+        app:strokeColor="@color/colorError"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:backgroundTint="@color/colorOnPrimary"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
